@@ -230,9 +230,10 @@ fastlane/test_output
 iOSInjectionProject/
 
 ### SwiftPackageManager ###
-Packages
+# Packages
 xcuserdata
-*.xcodeproj
+# *.xcodeproj
+
 
 
 ### Xcode ###
