@@ -29,6 +29,7 @@
 		348F10F6267E47D100EA5EAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F10F4267E47D100EA5EAB /* LaunchScreen.storyboard */; };
 		348F1101267E47D200EA5EAB /* MomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F1100267E47D200EA5EAB /* MomentsTests.swift */; };
 		348F110C267E47D200EA5EAB /* MomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F110B267E47D200EA5EAB /* MomentsUITests.swift */; };
+		34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BAC6C0267F864D00F6F144 /* Functions.swift */; };
 		34E42E1E267F3C8D003CB6CB /* Pods_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4723E414E8912EE45C039FD /* Pods_Moments.framework */; };
 		9BCDD28D2D13968BDBE7AD86 /* Pods_MomentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8D984B0C06360054A3BC16 /* Pods_MomentsTests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		348F1107267E47D200EA5EAB /* MomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		348F110B267E47D200EA5EAB /* MomentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsUITests.swift; sourceTree = "<group>"; };
 		348F110D267E47D200EA5EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BAC6C0267F864D00F6F144 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		88B35FEF6FB7941871ADD860 /* Pods-MomentsTests.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.internal.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.internal.xcconfig"; sourceTree = "<group>"; };
 		9943647161F3A810749BA25E /* Pods-Moments.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.internal.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.internal.xcconfig"; sourceTree = "<group>"; };
 		9C33A38F977E9C7C895E5EA6 /* Pods-MomentsTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.appstore.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.appstore.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		348F10E8267E47D100EA5EAB /* Moments */ = {
 			isa = PBXGroup;
 			children = (
+				34BAC6BE267F862900F6F144 /* Foundations */,
 				3484F897267F36B20020E856 /* Configurations */,
 				348F10E9267E47D100EA5EAB /* AppDelegate.swift */,
 				348F10EB267E47D100EA5EAB /* SceneDelegate.swift */,
@@ -224,6 +227,22 @@
 				348F110D267E47D200EA5EAB /* Info.plist */,
 			);
 			path = MomentsUITests;
+			sourceTree = "<group>";
+		};
+		34BAC6BE267F862900F6F144 /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				34BAC6BF267F863800F6F144 /* Utilities */,
+			);
+			path = Foundations;
+			sourceTree = "<group>";
+		};
+		34BAC6BF267F863800F6F144 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				34BAC6C0267F864D00F6F144 /* Functions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B1B13959579FDE3BADC53284 /* Pods */ = {
@@ -502,6 +521,7 @@
 				348F10EE267E47D100EA5EAB /* ViewController.swift in Sources */,
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
 				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
+				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
