@@ -791,7 +791,6 @@
 		3484F8BF267F397C0020E856 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7C55VYF9A;
 				INFOPLIST_FILE = MomentsUITests/Info.plist;
@@ -896,7 +895,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EED26CDEFAB196DC88B14B2E /* Pods-MomentsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7C55VYF9A;
@@ -918,7 +916,6 @@
 		348F1117267E47D200EA5EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7C55VYF9A;
 				INFOPLIST_FILE = MomentsUITests/Info.plist;
