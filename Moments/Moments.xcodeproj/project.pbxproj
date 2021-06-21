@@ -12,6 +12,7 @@
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
 		343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */; };
 		343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */; };
+		343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395662680E52F005C1854 /* DesignKitDemoViewController.swift */; };
 		3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F898267F36B20020E856 /* InternalProject.xcconfig */; };
 		3484F8A8267F36B20020E856 /* AppStoreTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */; };
 		3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */; };
@@ -72,6 +73,7 @@
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
 		343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerItemViewModel.swift; sourceTree = "<group>"; };
 		343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerCell.swift; sourceTree = "<group>"; };
+		343395662680E52F005C1854 /* DesignKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoViewController.swift; sourceTree = "<group>"; };
 		3484F898267F36B20020E856 /* InternalProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InternalProject.xcconfig; sourceTree = "<group>"; };
 		3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppStoreTarget.xcconfig; sourceTree = "<group>"; };
 		3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CompilerAndLanguage.xcconfig; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				34BAC6D3267F8B5300F6F144 /* InternalMenuDescriptionCell.swift */,
 				34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */,
 				343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */,
+				343395662680E52F005C1854 /* DesignKitDemoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				34BAC6D2267F898500F6F144 /* InternalMenuItemViewModel.swift in Sources */,
 				3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */,
 				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
+				343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */,
 				34BAC6D8267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift in Sources */,
 				34BAC6D4267F8B5300F6F144 /* InternalMenuDescriptionCell.swift in Sources */,
 				343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */,
