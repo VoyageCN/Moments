@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum MomentType: String, Codable {
+    case url = "URL"
+    case photos = "PHOTOS"
+}
