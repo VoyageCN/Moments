@@ -17,6 +17,7 @@
 		343868DF268338BB00A51B99 /* MomentsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868DE268338BB00A51B99 /* MomentsDetails.swift */; };
 		343868E1268338C600A51B99 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E0268338C600A51B99 /* UserDetails.swift */; };
 		343868E3268338CE00A51B99 /* MomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E2268338CE00A51B99 /* MomentType.swift */; };
+		343868E526833F6500A51B99 /* GetMomentsByUserIDAPISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E426833F6500A51B99 /* GetMomentsByUserIDAPISession.swift */; };
 		343A46DD268322FB00950DFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343A46DF268322FB00950DFD /* Localizable.strings */; };
 		343A46E32683261200950DFD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46E22683261200950DFD /* Strings.swift */; };
 		343A46EB2683331F00950DFD /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46EA2683331F00950DFD /* Configurations.swift */; };
@@ -87,6 +88,7 @@
 		343868DE268338BB00A51B99 /* MomentsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsDetails.swift; sourceTree = "<group>"; };
 		343868E0268338C600A51B99 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		343868E2268338CE00A51B99 /* MomentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentType.swift; sourceTree = "<group>"; };
+		343868E426833F6500A51B99 /* GetMomentsByUserIDAPISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMomentsByUserIDAPISession.swift; sourceTree = "<group>"; };
 		343A46DE268322FB00950DFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		343A46E02683231000950DFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		343A46E22683261200950DFD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				343A46ED268333E500950DFD /* API.swift */,
 				343A46EF2683349F00950DFD /* APISession.swift */,
+				343868E426833F6500A51B99 /* GetMomentsByUserIDAPISession.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 				343A46EB2683331F00950DFD /* Configurations.swift in Sources */,
 				34BAC6CC267F884900F6F144 /* InternalMenuViewController.swift in Sources */,
 				34BAC6CE267F888F00F6F144 /* InternalMenuViewModel.swift in Sources */,
+				343868E526833F6500A51B99 /* GetMomentsByUserIDAPISession.swift in Sources */,
 				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
 				343A46E32683261200950DFD /* Strings.swift in Sources */,
 				343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */,

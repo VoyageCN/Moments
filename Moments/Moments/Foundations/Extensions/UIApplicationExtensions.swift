@@ -17,4 +17,8 @@ extension UIApplication {
             .first(where: { $0.isKeyWindow })
         return keyWindow?.rootViewController
     }
+
+    static var appVersion: String {
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
+    }
 }

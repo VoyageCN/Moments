@@ -7,19 +7,20 @@
 
 import Foundation
 import RxSwift
-
-typealias Parameters = [String: Any]
-typealias HTTPHeaders = [String: String]
+import Alamofire
 
 public enum APISessionError: Error {
-    case networkError
+    case networkError(error: Error, statusCode: Int)
     case invalidJSON
     case noData
 }
 
 protocol APISession {
-    associatedtype T: Codable
-    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<T>
+    associatedtype ModelType: Codable
+
+    var defaultHeaders: HTTPHeaders { get }
+
+    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ModelType>
 }
 
 extension APISession {
@@ -27,38 +28,56 @@ extension APISession {
         return API.baseURL
     }
 
-    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<T> {
+    var defaultHeaders: HTTPHeaders {
+        // swiftlint:disable no_hardcoded_strings
+        let headers: HTTPHeaders = [
+            "x-app-platform": "iOS",
+            "x-app-version": UIApplication.appVersion,
+            "x-os-version": UIDevice.current.systemVersion
+        ]
+        // swiftlint:enable no_hardcoded_strings
+        return headers
+    }
+
+    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ModelType> {
+        return request(path, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+    }
+}
+
+private extension APISession {
+    func request(_ path: String, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders) -> Observable<ModelType> {
+        let url = baseUrl.appendingPathComponent(path)
+        var allHeaders = defaultHeaders
+        headers.forEach { allHeaders.add($0) }
+
         return Observable.create { observer -> Disposable in
-            let url = baseUrl.appendingPathComponent(path)
-
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                if let error = error {
-                    observer.onError(error)
-                    return
+            let request = AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: allHeaders, interceptor: nil, requestModifier: nil)
+                .validate()
+                .responseJSON { response in
+                    switch response.result {
+                    case .success:
+                        guard let data = response.data else {
+                            // if no error provided bt Alamofire return .noData error instead.
+                            observer.onError(response.error ?? APISessionError.noData)
+                            return
+                        }
+                        do {
+                            let model = try JSONDecoder().decode(ModelType.self, from: data)
+                            observer.onNext(model)
+                            observer.onCompleted()
+                        } catch {
+                            observer.onError(error)
+                        }
+                    case .failure(let error):
+                        if let statusCode = response.response?.statusCode {
+                            observer.onError(APISessionError.networkError(error: error, statusCode: statusCode))
+                        } else {
+                            observer.onError(error)
+                        }
+                    }
                 }
-                guard let data = data else {
-                    observer.onError(APISessionError.noData)
-                    return
-                }
-
-                guard let httpResponse = response as? HTTPURLResponse, (200...399).contains(httpResponse.statusCode) else {
-                    observer.onError(APISessionError.networkError)
-                    return
-                }
-
-                do {
-                    let decoder = JSONDecoder()
-                    let model = try decoder.decode(T.self, from: data)
-                    observer.onNext(model)
-                    observer.onCompleted()
-                } catch {
-                    observer.onError(APISessionError.invalidJSON)
-                }
-            }
-            task.resume()
-
             return Disposables.create {
-                task.cancel()
+                request.cancel()
             }
         }
     }
