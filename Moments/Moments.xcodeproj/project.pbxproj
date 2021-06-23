@@ -17,6 +17,7 @@
 		343A46E32683261200950DFD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46E22683261200950DFD /* Strings.swift */; };
 		343A46EB2683331F00950DFD /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46EA2683331F00950DFD /* Configurations.swift */; };
 		343A46EE268333E500950DFD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46ED268333E500950DFD /* API.swift */; };
+		343A46F02683349F00950DFD /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46EF2683349F00950DFD /* APISession.swift */; };
 		3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F898267F36B20020E856 /* InternalProject.xcconfig */; };
 		3484F8A8267F36B20020E856 /* AppStoreTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */; };
 		3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */; };
@@ -84,6 +85,7 @@
 		343A46E6268329D100950DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		343A46EA2683331F00950DFD /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		343A46ED268333E500950DFD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		343A46EF2683349F00950DFD /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		3484F898267F36B20020E856 /* InternalProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InternalProject.xcconfig; sourceTree = "<group>"; };
 		3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppStoreTarget.xcconfig; sourceTree = "<group>"; };
 		3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CompilerAndLanguage.xcconfig; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				343A46ED268333E500950DFD /* API.swift */,
+				343A46EF2683349F00950DFD /* APISession.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */,
 				34BAC6D4267F8B5300F6F144 /* InternalMenuDescriptionCell.swift in Sources */,
 				34BAC6D8267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift in Sources */,
+				343A46F02683349F00950DFD /* APISession.swift in Sources */,
 				34BAC6D2267F898500F6F144 /* InternalMenuItemViewModel.swift in Sources */,
 				3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */,
 				34BAC6D0267F890700F6F144 /* InternalMenuSection.swift in Sources */,
