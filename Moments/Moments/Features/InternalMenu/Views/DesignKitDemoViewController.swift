@@ -70,7 +70,7 @@ private extension DesignKitDemoViewController {
                  ("small", UIFont.designKit.small)]
 
         let title = configure(UILabel()) {
-            $0.text = "# Typography"
+            $0.text = L10n.internalMenuTypography
             $0.font = UIFont.designKit.title1
         }
 
@@ -105,7 +105,7 @@ private extension DesignKitDemoViewController {
         ]
 
         let title = configure(UILabel()) {
-            $0.text = "# Colors"
+            $0.text = L10n.internalMenuColors
             $0.font = UIFont.designKit.title1
         }
 
@@ -137,7 +137,7 @@ private extension DesignKitDemoViewController {
         ]
 
         let title = configure(UILabel()) {
-            $0.text = "# Avatars"
+            $0.text = L10n.internalMenuAvatars
             $0.font = UIFont.designKit.title1
         }
 

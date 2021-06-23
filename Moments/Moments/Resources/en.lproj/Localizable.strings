@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Moments
+
+  Created by 史傲楠 on 2021/6/23.
+  
+*/
+
+// Internal Menu
+"internalMenu.area51" = "Area 51";
+"internalMenu.generalInfo" = "General Info";
+
+"internalMenuTypography" = "Typography";
+"internalMenuColors" = "Colors";
+"internalMenuAvatars" = "Avatars";
+
+// Moments List
+"momentsList.errorMessage" = "Something went wrong, please try again later";

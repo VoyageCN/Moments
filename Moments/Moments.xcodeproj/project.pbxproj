@@ -13,6 +13,8 @@
 		343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */; };
 		343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */; };
 		343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395662680E52F005C1854 /* DesignKitDemoViewController.swift */; };
+		343A46DD268322FB00950DFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343A46DF268322FB00950DFD /* Localizable.strings */; };
+		343A46E32683261200950DFD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46E22683261200950DFD /* Strings.swift */; };
 		3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F898267F36B20020E856 /* InternalProject.xcconfig */; };
 		3484F8A8267F36B20020E856 /* AppStoreTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */; };
 		3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */; };
@@ -74,6 +76,9 @@
 		343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerItemViewModel.swift; sourceTree = "<group>"; };
 		343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerCell.swift; sourceTree = "<group>"; };
 		343395662680E52F005C1854 /* DesignKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoViewController.swift; sourceTree = "<group>"; };
+		343A46DE268322FB00950DFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		343A46E02683231000950DFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		343A46E22683261200950DFD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3484F898267F36B20020E856 /* InternalProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InternalProject.xcconfig; sourceTree = "<group>"; };
 		3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppStoreTarget.xcconfig; sourceTree = "<group>"; };
 		3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CompilerAndLanguage.xcconfig; sourceTree = "<group>"; };
@@ -166,6 +171,22 @@
 			path = Routes;
 			sourceTree = "<group>";
 		};
+		343A46D92683227E00950DFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				343A46DF268322FB00950DFD /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		343A46E1268325F700950DFD /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				343A46E22683261200950DFD /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		3484F897267F36B20020E856 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +265,8 @@
 		348F10E8267E47D100EA5EAB /* Moments */ = {
 			isa = PBXGroup;
 			children = (
+				343A46E1268325F700950DFD /* Generated */,
+				343A46D92683227E00950DFD /* Resources */,
 				3484F897267F36B20020E856 /* Configurations */,
 				34BAC6C2267F86EA00F6F144 /* Features */,
 				34BAC6BE267F862900F6F144 /* Foundations */,
@@ -395,8 +418,9 @@
 			buildConfigurationList = 348F1110267E47D200EA5EAB /* Build configuration list for PBXNativeTarget "Moments" */;
 			buildPhases = (
 				1BDEE19FD4F2C2B0CD856A3E /* [CP] Check Pods Manifest.lock */,
-				3484F892267EF36F0020E856 /* Run SwiftLint */,
+				343A46D8268321DE00950DFD /* Run SwiftGen */,
 				348F10E2267E47D100EA5EAB /* Sources */,
+				3484F892267EF36F0020E856 /* Run SwiftLint */,
 				348F10E3267E47D100EA5EAB /* Frameworks */,
 				348F10E4267E47D100EA5EAB /* Resources */,
 				66851A1C75C6AF93A620BC27 /* [CP] Embed Pods Frameworks */,
@@ -477,6 +501,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 348F10DD267E47D100EA5EAB;
 			productRefGroup = 348F10E7267E47D100EA5EAB /* Products */;
@@ -508,6 +533,7 @@
 				3484F8AD267F36B20020E856 /* GoogleService-Info-Development.plist in Resources */,
 				3484F8AE267F36B20020E856 /* GoogleService-Info-Internal.plist in Resources */,
 				3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */,
+				343A46DD268322FB00950DFD /* Localizable.strings in Resources */,
 				3484F8AC267F36B20020E856 /* InternalTarget.xcconfig in Resources */,
 				348F10F6267E47D100EA5EAB /* LaunchScreen.storyboard in Resources */,
 				348F10F1267E47D100EA5EAB /* Main.storyboard in Resources */,
@@ -570,6 +596,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MomentsTests/Pods-MomentsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		343A46D8268321DE00950DFD /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
 		};
 		3484F892267EF36F0020E856 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -637,6 +681,7 @@
 			files = (
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
 				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
+				343A46E32683261200950DFD /* Strings.swift in Sources */,
 				34BAC6CA267F87FE00F6F144 /* BaseViewController.swift in Sources */,
 				343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */,
 				343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */,
@@ -689,6 +734,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		343A46DF268322FB00950DFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343A46DE268322FB00950DFD /* en */,
+				343A46E02683231000950DFD /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		348F10EF267E47D100EA5EAB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -713,6 +767,7 @@
 			baseConfigurationReference = 3484F898267F36B20020E856 /* InternalProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -839,6 +894,7 @@
 			baseConfigurationReference = 3484F89B267F36B20020E856 /* AppStoreProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -964,6 +1020,7 @@
 			baseConfigurationReference = 3484F8A2267F36B20020E856 /* DebugProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -997,7 +1054,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;

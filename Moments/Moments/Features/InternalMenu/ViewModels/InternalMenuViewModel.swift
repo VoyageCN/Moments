@@ -14,17 +14,17 @@ protocol InternalMenuViewModelType {
 }
 
 class InternalMenuViewModel: InternalMenuViewModelType {
-    var title = "Area 51"
+    var title = L10n.InternalMenu.area51
     var sections: Observable<[InternalMenuSection]>
 
     init(router: InternalMenuRouting) {
         let appVersion = "Version \((Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String) ?? "1.0")"
 
         let infoSection = InternalMenuSection(
-            title: "General Info",
+            title: L10n.InternalMenu.generalInfo,
             items: [InternalMenuDescriptionItemViewModel(title: appVersion)]
         )
-
+        
         let designKitSection = InternalMenuSection(title: "DesignKit Demo", items: [DesignKitDemoItemViewModel(router: router)])
 
         sections = .just([
