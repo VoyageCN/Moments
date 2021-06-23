@@ -15,6 +15,8 @@
 		343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395662680E52F005C1854 /* DesignKitDemoViewController.swift */; };
 		343A46DD268322FB00950DFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343A46DF268322FB00950DFD /* Localizable.strings */; };
 		343A46E32683261200950DFD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46E22683261200950DFD /* Strings.swift */; };
+		343A46EB2683331F00950DFD /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46EA2683331F00950DFD /* Configurations.swift */; };
+		343A46EE268333E500950DFD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46ED268333E500950DFD /* API.swift */; };
 		3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F898267F36B20020E856 /* InternalProject.xcconfig */; };
 		3484F8A8267F36B20020E856 /* AppStoreTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */; };
 		3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */; };
@@ -80,6 +82,8 @@
 		343A46E02683231000950DFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		343A46E22683261200950DFD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		343A46E6268329D100950DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		343A46EA2683331F00950DFD /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		343A46ED268333E500950DFD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3484F898267F36B20020E856 /* InternalProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InternalProject.xcconfig; sourceTree = "<group>"; };
 		3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppStoreTarget.xcconfig; sourceTree = "<group>"; };
 		3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CompilerAndLanguage.xcconfig; sourceTree = "<group>"; };
@@ -188,6 +192,14 @@
 				343A46E22683261200950DFD /* Strings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		343A46EC268333DB00950DFD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				343A46ED268333E500950DFD /* API.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		3484F897267F36B20020E856 /* Configurations */ = {
@@ -303,6 +315,7 @@
 		34BAC6BE267F862900F6F144 /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
+				343A46EC268333DB00950DFD /* Networking */,
 				343395562680D511005C1854 /* Extensions */,
 				34BAC6D9267F8DE900F6F144 /* Routing */,
 				34BAC6BF267F863800F6F144 /* Utilities */,
@@ -316,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				34BAC6C0267F864D00F6F144 /* Functions.swift */,
+				343A46EA2683331F00950DFD /* Configurations.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -680,6 +694,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343A46EE268333E500950DFD /* API.swift in Sources */,
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
 				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
 				34BAC6CA267F87FE00F6F144 /* BaseViewController.swift in Sources */,
@@ -694,6 +709,7 @@
 				34BAC6D2267F898500F6F144 /* InternalMenuItemViewModel.swift in Sources */,
 				3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */,
 				34BAC6D0267F890700F6F144 /* InternalMenuSection.swift in Sources */,
+				343A46EB2683331F00950DFD /* Configurations.swift in Sources */,
 				34BAC6CC267F884900F6F144 /* InternalMenuViewController.swift in Sources */,
 				34BAC6CE267F888F00F6F144 /* InternalMenuViewModel.swift in Sources */,
 				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
