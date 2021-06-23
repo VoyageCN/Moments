@@ -169,10 +169,10 @@
 		3484F897267F36B20020E856 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				3484F8B7267F36D30020E856 /* Shared */,
-				3484F8B6267F36CA0020E856 /* Projects */,
-				3484F8B5267F36C20020E856 /* Targets */,
 				3484F89E267F36B20020E856 /* Firebase */,
+				3484F8B6267F36CA0020E856 /* Projects */,
+				3484F8B7267F36D30020E856 /* Shared */,
+				3484F8B5267F36C20020E856 /* Targets */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 		3484F89E267F36B20020E856 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				3484F8A1267F36B20020E856 /* GoogleService-Info-AppStore.plist */,
 				3484F89F267F36B20020E856 /* GoogleService-Info-Development.plist */,
 				3484F8A0267F36B20020E856 /* GoogleService-Info-Internal.plist */,
-				3484F8A1267F36B20020E856 /* GoogleService-Info-AppStore.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -191,9 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				3484F899267F36B20020E856 /* AppStoreTarget.xcconfig */,
+				3484F8A5267F36B20020E856 /* BaseTarget.xcconfig */,
 				3484F89C267F36B20020E856 /* DebugTarget.xcconfig */,
 				3484F89D267F36B20020E856 /* InternalTarget.xcconfig */,
-				3484F8A5267F36B20020E856 /* BaseTarget.xcconfig */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -201,10 +201,10 @@
 		3484F8B6267F36CA0020E856 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				3484F898267F36B20020E856 /* InternalProject.xcconfig */,
 				3484F89B267F36B20020E856 /* AppStoreProject.xcconfig */,
-				3484F8A2267F36B20020E856 /* DebugProject.xcconfig */,
 				3484F8A4267F36B20020E856 /* BaseProject.xcconfig */,
+				3484F8A2267F36B20020E856 /* DebugProject.xcconfig */,
+				3484F898267F36B20020E856 /* InternalProject.xcconfig */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 		3484F8B7267F36D30020E856 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */,
 				3484F8A3267F36B20020E856 /* BaseConfigurations.xcconfig */,
+				3484F89A267F36B20020E856 /* CompilerAndLanguage.xcconfig */,
 				3484F8A6267F36B20020E856 /* SDKAndDeviceSupport.xcconfig */,
 			);
 			name = Shared;
@@ -244,16 +244,16 @@
 		348F10E8267E47D100EA5EAB /* Moments */ = {
 			isa = PBXGroup;
 			children = (
+				3484F897267F36B20020E856 /* Configurations */,
 				34BAC6C2267F86EA00F6F144 /* Features */,
 				34BAC6BE267F862900F6F144 /* Foundations */,
-				3484F897267F36B20020E856 /* Configurations */,
 				348F10E9267E47D100EA5EAB /* AppDelegate.swift */,
+				348F10F2267E47D100EA5EAB /* Assets.xcassets */,
+				348F10F7267E47D100EA5EAB /* Info.plist */,
+				348F10F4267E47D100EA5EAB /* LaunchScreen.storyboard */,
+				348F10EF267E47D100EA5EAB /* Main.storyboard */,
 				348F10EB267E47D100EA5EAB /* SceneDelegate.swift */,
 				348F10ED267E47D100EA5EAB /* ViewController.swift */,
-				348F10EF267E47D100EA5EAB /* Main.storyboard */,
-				348F10F2267E47D100EA5EAB /* Assets.xcassets */,
-				348F10F4267E47D100EA5EAB /* LaunchScreen.storyboard */,
-				348F10F7267E47D100EA5EAB /* Info.plist */,
 			);
 			path = Moments;
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 		348F10FF267E47D200EA5EAB /* MomentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				348F1100267E47D200EA5EAB /* MomentsTests.swift */,
 				348F1102267E47D200EA5EAB /* Info.plist */,
+				348F1100267E47D200EA5EAB /* MomentsTests.swift */,
 			);
 			path = MomentsTests;
 			sourceTree = "<group>";
@@ -270,8 +270,8 @@
 		348F110A267E47D200EA5EAB /* MomentsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				348F110B267E47D200EA5EAB /* MomentsUITests.swift */,
 				348F110D267E47D200EA5EAB /* Info.plist */,
+				348F110B267E47D200EA5EAB /* MomentsUITests.swift */,
 			);
 			path = MomentsUITests;
 			sourceTree = "<group>";
@@ -281,9 +281,9 @@
 			children = (
 				343395562680D511005C1854 /* Extensions */,
 				34BAC6D9267F8DE900F6F144 /* Routing */,
+				34BAC6BF267F863800F6F144 /* Utilities */,
 				34BAC6C7267F870B00F6F144 /* ViewModels */,
 				34BAC6C6267F870900F6F144 /* Views */,
-				34BAC6BF267F863800F6F144 /* Utilities */,
 			);
 			path = Foundations;
 			sourceTree = "<group>";
@@ -308,8 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				3433955D2680DE80005C1854 /* Routes */,
-				34BAC6C5267F86FF00F6F144 /* Views */,
 				34BAC6C4267F86F600F6F144 /* ViewModels */,
+				34BAC6C5267F86FF00F6F144 /* Views */,
 			);
 			path = InternalMenu;
 			sourceTree = "<group>";
@@ -317,12 +317,12 @@
 		34BAC6C4267F86F600F6F144 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				34BAC6CD267F888F00F6F144 /* InternalMenuViewModel.swift */,
-				34BAC6CF267F890700F6F144 /* InternalMenuSection.swift */,
-				34BAC6D1267F898500F6F144 /* InternalMenuItemViewModel.swift */,
-				34BAC6D7267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift */,
 				343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */,
 				343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */,
+				34BAC6D7267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift */,
+				34BAC6D1267F898500F6F144 /* InternalMenuItemViewModel.swift */,
+				34BAC6CF267F890700F6F144 /* InternalMenuSection.swift */,
+				34BAC6CD267F888F00F6F144 /* InternalMenuViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -330,11 +330,11 @@
 		34BAC6C5267F86FF00F6F144 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				34BAC6CB267F884900F6F144 /* InternalMenuViewController.swift */,
-				34BAC6D3267F8B5300F6F144 /* InternalMenuDescriptionCell.swift */,
-				34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */,
-				343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */,
 				343395662680E52F005C1854 /* DesignKitDemoViewController.swift */,
+				343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */,
+				34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */,
+				34BAC6D3267F8B5300F6F144 /* InternalMenuDescriptionCell.swift */,
+				34BAC6CB267F884900F6F144 /* InternalMenuViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,14 +365,14 @@
 		B1B13959579FDE3BADC53284 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D909DF9EA964A0E56303C83F /* Pods-Moments.debug.xcconfig */,
-				14AE5F1C40A804239897144E /* Pods-Moments.release.xcconfig */,
-				EED26CDEFAB196DC88B14B2E /* Pods-MomentsTests.debug.xcconfig */,
-				D94F2DF3780B290045E6F117 /* Pods-MomentsTests.release.xcconfig */,
 				C1C52E44DD7E03C364AAD8B5 /* Pods-Moments.appstore.xcconfig */,
+				D909DF9EA964A0E56303C83F /* Pods-Moments.debug.xcconfig */,
 				9943647161F3A810749BA25E /* Pods-Moments.internal.xcconfig */,
+				14AE5F1C40A804239897144E /* Pods-Moments.release.xcconfig */,
 				9C33A38F977E9C7C895E5EA6 /* Pods-MomentsTests.appstore.xcconfig */,
+				EED26CDEFAB196DC88B14B2E /* Pods-MomentsTests.debug.xcconfig */,
 				88B35FEF6FB7941871ADD860 /* Pods-MomentsTests.internal.xcconfig */,
+				D94F2DF3780B290045E6F117 /* Pods-MomentsTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -495,23 +495,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3484F8AA267F36B20020E856 /* AppStoreProject.xcconfig in Resources */,
 				3484F8A8267F36B20020E856 /* AppStoreTarget.xcconfig in Resources */,
-				3484F8AC267F36B20020E856 /* InternalTarget.xcconfig in Resources */,
+				348F10F3267E47D100EA5EAB /* Assets.xcassets in Resources */,
+				3484F8B1267F36B20020E856 /* BaseConfigurations.xcconfig in Resources */,
+				3484F8B2267F36B20020E856 /* BaseProject.xcconfig in Resources */,
+				3484F8B3267F36B20020E856 /* BaseTarget.xcconfig in Resources */,
+				3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */,
+				3484F8B0267F36B20020E856 /* DebugProject.xcconfig in Resources */,
 				3484F8AB267F36B20020E856 /* DebugTarget.xcconfig in Resources */,
 				3484F8AF267F36B20020E856 /* GoogleService-Info-AppStore.plist in Resources */,
-				3484F8B4267F36B20020E856 /* SDKAndDeviceSupport.xcconfig in Resources */,
-				3484F8B3267F36B20020E856 /* BaseTarget.xcconfig in Resources */,
-				3484F8AA267F36B20020E856 /* AppStoreProject.xcconfig in Resources */,
-				348F10F6267E47D100EA5EAB /* LaunchScreen.storyboard in Resources */,
-				3484F8B1267F36B20020E856 /* BaseConfigurations.xcconfig in Resources */,
-				3484F8B0267F36B20020E856 /* DebugProject.xcconfig in Resources */,
-				348F10F3267E47D100EA5EAB /* Assets.xcassets in Resources */,
-				3484F8A9267F36B20020E856 /* CompilerAndLanguage.xcconfig in Resources */,
-				3484F8B2267F36B20020E856 /* BaseProject.xcconfig in Resources */,
-				3484F8AE267F36B20020E856 /* GoogleService-Info-Internal.plist in Resources */,
-				348F10F1267E47D100EA5EAB /* Main.storyboard in Resources */,
-				3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */,
 				3484F8AD267F36B20020E856 /* GoogleService-Info-Development.plist in Resources */,
+				3484F8AE267F36B20020E856 /* GoogleService-Info-Internal.plist in Resources */,
+				3484F8A7267F36B20020E856 /* InternalProject.xcconfig in Resources */,
+				3484F8AC267F36B20020E856 /* InternalTarget.xcconfig in Resources */,
+				348F10F6267E47D100EA5EAB /* LaunchScreen.storyboard in Resources */,
+				348F10F1267E47D100EA5EAB /* Main.storyboard in Resources */,
+				3484F8B4267F36B20020E856 /* SDKAndDeviceSupport.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,25 +635,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34BAC6CA267F87FE00F6F144 /* BaseViewController.swift in Sources */,
-				348F10EE267E47D100EA5EAB /* ViewController.swift in Sources */,
-				343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */,
-				34BAC6CC267F884900F6F144 /* InternalMenuViewController.swift in Sources */,
-				34BAC6D0267F890700F6F144 /* InternalMenuSection.swift in Sources */,
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
+				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
+				34BAC6CA267F87FE00F6F144 /* BaseViewController.swift in Sources */,
+				343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */,
+				343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */,
+				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
+				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
+				343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */,
+				34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */,
+				34BAC6D4267F8B5300F6F144 /* InternalMenuDescriptionCell.swift in Sources */,
+				34BAC6D8267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift in Sources */,
 				34BAC6D2267F898500F6F144 /* InternalMenuItemViewModel.swift in Sources */,
 				3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */,
-				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
-				343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */,
-				34BAC6D8267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift in Sources */,
-				34BAC6D4267F8B5300F6F144 /* InternalMenuDescriptionCell.swift in Sources */,
-				343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */,
-				34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */,
-				343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */,
-				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
-				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
+				34BAC6D0267F890700F6F144 /* InternalMenuSection.swift in Sources */,
+				34BAC6CC267F884900F6F144 /* InternalMenuViewController.swift in Sources */,
 				34BAC6CE267F888F00F6F144 /* InternalMenuViewModel.swift in Sources */,
-				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
+				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
+				343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */,
+				348F10EE267E47D100EA5EAB /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

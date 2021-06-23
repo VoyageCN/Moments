@@ -16,86 +16,26 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios lint_code
-```
-fastlane ios lint_code
-```
-Lint code
-### ios format_code
-```
-fastlane ios format_code
-```
-Lint and format code
-### ios sort_files
-```
-fastlane ios sort_files
-```
-Sort Xcode project files
-### ios prepare_pr
-```
-fastlane ios prepare_pr
-```
-Prepare for a pull request
-### ios build_dev_app
-```
-fastlane ios build_dev_app
-```
-Build development app
 ### ios tests
 ```
 fastlane ios tests
 ```
 Run unit tests
-### ios download_profiles
+### ios code_lint
 ```
-fastlane ios download_profiles
+fastlane ios code_lint
 ```
-Download certificates and profiles
-### ios create_new_profiles
+
+### ios code_format
 ```
-fastlane ios create_new_profiles
+fastlane ios code_format
 ```
-Create all new provisioning profiles managed by fastlane match
-### ios nuke_profiles
+
+### ios sort_files
 ```
-fastlane ios nuke_profiles
+fastlane ios sort_files
 ```
-Nuke all provisioning profiles managed by fastlane match
-### ios add_device
-```
-fastlane ios add_device
-```
-Add a new device to provisioning profile
-### ios archive_internal
-```
-fastlane ios archive_internal
-```
-Creates an archive of the Internal app for testing
-### ios archive_appstore
-```
-fastlane ios archive_appstore
-```
-Creates an archive of the Production app with Appstore distribution
-### ios upload_symbols_to_crashlytics_internal
-```
-fastlane ios upload_symbols_to_crashlytics_internal
-```
-Upload symbols to Crashlytics for Internal app
-### ios upload_symbols_to_crashlytics_appstore
-```
-fastlane ios upload_symbols_to_crashlytics_appstore
-```
-Upload symbols to Crashlytics for Production app
-### ios deploy_internal
-```
-fastlane ios deploy_internal
-```
-Deploy the Internal app to Firebase Distribution
-### ios deploy_appstore
-```
-fastlane ios deploy_appstore
-```
-Deploy the Production app to TestFlight and App Store
+
 
 ----
 
