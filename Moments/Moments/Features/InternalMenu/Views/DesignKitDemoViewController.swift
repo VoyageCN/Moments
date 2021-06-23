@@ -12,7 +12,7 @@ final class DesignKitDemoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupViews();
+        setupViews()
     }
 }
 
@@ -56,21 +56,25 @@ private extension DesignKitDemoViewController {
     }
 
     func buildTypography() -> UIView {
-        let items = [("display1", UIFont.designKit.display1),
-                 ("display2", UIFont.designKit.display2),
-                 ("title1", UIFont.designKit.title1),
-                 ("title2", UIFont.designKit.title2),
-                 ("title3", UIFont.designKit.title3),
-                 ("title4", UIFont.designKit.title4),
-                 ("title5", UIFont.designKit.title5),
-                 ("bodyBold", UIFont.designKit.bodyBold),
-                 ("body", UIFont.designKit.body),
-                 ("captionBold", UIFont.designKit.captionBold),
-                 ("caption", UIFont.designKit.caption),
-                 ("small", UIFont.designKit.small)]
+        // swiftlint:disable no_hardcoded_strings
+        let items = [
+            ("display1", UIFont.designKit.display1),
+            ("display2", UIFont.designKit.display2),
+            ("title1", UIFont.designKit.title1),
+            ("title2", UIFont.designKit.title2),
+            ("title3", UIFont.designKit.title3),
+            ("title4", UIFont.designKit.title4),
+            ("title5", UIFont.designKit.title5),
+            ("bodyBold", UIFont.designKit.bodyBold),
+            ("body", UIFont.designKit.body),
+            ("captionBold", UIFont.designKit.captionBold),
+            ("caption", UIFont.designKit.caption),
+            ("small", UIFont.designKit.small)
+        ]
+        // swiftlint:enable no_hardcoded_strings
 
         let title = configure(UILabel()) {
-            $0.text = L10n.internalMenuTypography
+            $0.text = L10n.InternalMenu.typography
             $0.font = UIFont.designKit.title1
         }
 
@@ -92,6 +96,7 @@ private extension DesignKitDemoViewController {
     }
 
     func buildColors() -> UIView {
+        // swiftlint:disable no_hardcoded_strings
         let items = [
             ("primary", UIColor.designKit.primary),
             ("background", UIColor.designKit.background),
@@ -103,9 +108,10 @@ private extension DesignKitDemoViewController {
             ("tertiaryText", UIColor.designKit.tertiaryText),
             ("quaternaryText", UIColor.designKit.quaternaryText)
         ]
+        // swiftlint:enable no_hardcoded_strings
 
         let title = configure(UILabel()) {
-            $0.text = L10n.internalMenuColors
+            $0.text = L10n.InternalMenu.colors
             $0.font = UIFont.designKit.title1
         }
 
@@ -128,6 +134,7 @@ private extension DesignKitDemoViewController {
     }
 
     func buildAvatars() -> UIView {
+        // swiftlint:disable no_hardcoded_strings
         let items = [
             URL(string: "https://images.generated.photos/SZ43KV-Oo26-wpPUM7zDLo19CpGFH0eBnjegQFtvaUc/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA4/NTUzMzguanBn.jpg"),
             URL(string: "https://randomuser.me/api/portraits/women/68.jpg"),
@@ -135,9 +142,10 @@ private extension DesignKitDemoViewController {
             URL(string: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzNjAzMTgzMV5BMl5BanBnXkFtZTcwNjU2NjA2NQ@@._V1_UY256_CR11,0,172,256_AL_.jpg"),
             URL(string: "https://uifaces.co/our-content/donated/fID5-1BV.jpg")
         ]
+        // swiftlint:enable no_hardcoded_strings
 
         let title = configure(UILabel()) {
-            $0.text = L10n.internalMenuAvatars
+            $0.text = L10n.InternalMenu.avatars
             $0.font = UIFont.designKit.title1
         }
 
