@@ -1,8 +1,8 @@
 //
-//  UIFont+Typography.swift
-//  Moments
+//  UIFontExtensions.swift
+//  DesignKit
 //
-//  Created by 史傲楠 on 2021/6/21.
+//  Created by 史傲楠 on 2021/6/23.
 //
 
 import UIKit
@@ -59,5 +59,26 @@ public extension UIFont {
         public var small: UIFont {
             FontScaler(constrained: .systemFont(ofSize: 12, weight: .light), following: .footnote).font
         }
+    }
+}
+
+public extension UILabel {
+    func setDynamicFont(_ dynamicFont: UIFont) {
+        adjustsFontForContentSizeCategory = true
+        font = dynamicFont
+    }
+}
+
+public extension UITextView {
+    func setDynamicFont(_ dynamicFont: UIFont) {
+        adjustsFontForContentSizeCategory = true
+        font = dynamicFont
+    }
+}
+
+public extension UIButton {
+    func setDynamicFont(_ dynamicFont: UIFont) {
+        titleLabel?.adjustsFontForContentSizeCategory = true
+        titleLabel?.font = dynamicFont
     }
 }
