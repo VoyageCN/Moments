@@ -13,17 +13,17 @@ protocol MomentsRepoType {
 }
 
 struct MomentsRepo: MomentsRepoType {
-    private let getMomentsByUserIDAPISessionBuilder: () -> GetMomentsByUserIDAPISessionType
+    private let getMomentsByUserIDSessionBuilder: () -> GetMomentsByUserIDSessionType
 
     static var shared: MomentsRepo {
-        return MomentsRepo(getMomentsByUserIDAPISessionBuilder: { GetMomentsByUserIDAPISession() })
+        return MomentsRepo(getMomentsByUserIDSessionBuilder: { GetMomentsByUserIDSession() })
     }
 
-    init(getMomentsByUserIDAPISessionBuilder: @escaping () -> GetMomentsByUserIDAPISessionType) {
-        self.getMomentsByUserIDAPISessionBuilder = getMomentsByUserIDAPISessionBuilder
+    init(getMomentsByUserIDSessionBuilder: @escaping () -> GetMomentsByUserIDSessionType) {
+        self.getMomentsByUserIDSessionBuilder = getMomentsByUserIDSessionBuilder
     }
 
     func getMoments(userID: String) -> Observable<MomentsDetails> {
-        getMomentsByUserIDAPISessionBuilder().getMoments(userID: userID)
+        getMomentsByUserIDSessionBuilder().getMoments(userID: userID)
     }
 }
