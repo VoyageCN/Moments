@@ -8,6 +8,5 @@
 import Foundation
 
 protocol ListItemView {
-    associatedtype ViewModel
-    func update(with viewModel: ViewModel)
+    func update(with viewModel: ListItemViewModel)
 }

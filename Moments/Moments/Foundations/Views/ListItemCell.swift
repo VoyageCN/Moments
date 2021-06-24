@@ -8,6 +8,5 @@
 import UIKit
 
 protocol ListItemCell {
-    associatedtype ViewModel
-    func update(with viewModel: ViewModel)
+    func update(with viewModel: ListItemViewModel)
 }
