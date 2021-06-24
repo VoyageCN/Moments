@@ -25,10 +25,7 @@
 		343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */; };
 		343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */; };
 		343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395662680E52F005C1854 /* DesignKitDemoViewController.swift */; };
-		343868DB268338A500A51B99 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868DA268338A500A51B99 /* Moment.swift */; };
 		343868DF268338BB00A51B99 /* MomentsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868DE268338BB00A51B99 /* MomentsDetails.swift */; };
-		343868E1268338C600A51B99 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E0268338C600A51B99 /* UserDetails.swift */; };
-		343868E3268338CE00A51B99 /* MomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E2268338CE00A51B99 /* MomentType.swift */; };
 		343868E526833F6500A51B99 /* GetMomentsByUserIDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343868E426833F6500A51B99 /* GetMomentsByUserIDSession.swift */; };
 		343A46DD268322FB00950DFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343A46DF268322FB00950DFD /* Localizable.strings */; };
 		343A46E32683261200950DFD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A46E22683261200950DFD /* Strings.swift */; };
@@ -106,10 +103,7 @@
 		343395622680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerItemViewModel.swift; sourceTree = "<group>"; };
 		343395642680E049005C1854 /* InternalMenuActionTriggerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerCell.swift; sourceTree = "<group>"; };
 		343395662680E52F005C1854 /* DesignKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoViewController.swift; sourceTree = "<group>"; };
-		343868DA268338A500A51B99 /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		343868DE268338BB00A51B99 /* MomentsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsDetails.swift; sourceTree = "<group>"; };
-		343868E0268338C600A51B99 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
-		343868E2268338CE00A51B99 /* MomentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentType.swift; sourceTree = "<group>"; };
 		343868E426833F6500A51B99 /* GetMomentsByUserIDSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMomentsByUserIDSession.swift; sourceTree = "<group>"; };
 		343A46DE268322FB00950DFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		343A46E02683231000950DFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -257,10 +251,7 @@
 		343868D92683389A00A51B99 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				343868DA268338A500A51B99 /* Moment.swift */,
 				343868DE268338BB00A51B99 /* MomentsDetails.swift */,
-				343868E2268338CE00A51B99 /* MomentType.swift */,
-				343868E0268338C600A51B99 /* UserDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -816,16 +807,13 @@
 				34048F7B26842BDB00F6EDA1 /* ListItemView.swift in Sources */,
 				34048F6D26841C9400F6EDA1 /* ListItemViewModel.swift in Sources */,
 				34048F6B26841C7600F6EDA1 /* ListViewModel.swift in Sources */,
-				343868DB268338A500A51B99 /* Moment.swift in Sources */,
 				343868DF268338BB00A51B99 /* MomentsDetails.swift in Sources */,
 				34048F832684350F00F6EDA1 /* MomentsListViewController.swift in Sources */,
 				34048F6926841C7000F6EDA1 /* MomentsListViewModel.swift in Sources */,
 				34048F6526841AB800F6EDA1 /* MomentsRepo.swift in Sources */,
-				343868E3268338CE00A51B99 /* MomentType.swift in Sources */,
 				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
 				343A46E32683261200950DFD /* Strings.swift in Sources */,
 				343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */,
-				343868E1268338C600A51B99 /* UserDetails.swift in Sources */,
 				34048F752684218700F6EDA1 /* UserProfileListItemView.swift in Sources */,
 				34048F79268427A400F6EDA1 /* UserProfileListItemViewModel.swift in Sources */,
 			);
