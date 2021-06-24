@@ -21,6 +21,7 @@
 		34048F832684350F00F6EDA1 /* MomentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F822684350F00F6EDA1 /* MomentsListViewController.swift */; };
 		34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F842684706600F6EDA1 /* MomentListItemView.swift */; };
 		34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */; };
+		34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F88268482F100F6EDA1 /* BaseTableViewController.swift */; };
 		343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395572680D52A005C1854 /* UIApplicationExtensions.swift */; };
 		3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433955E2680DE94005C1854 /* InternalMenuRouter.swift */; };
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
@@ -101,6 +102,7 @@
 		34048F822684350F00F6EDA1 /* MomentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsListViewController.swift; sourceTree = "<group>"; };
 		34048F842684706600F6EDA1 /* MomentListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemView.swift; sourceTree = "<group>"; };
 		34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemViewModel.swift; sourceTree = "<group>"; };
+		34048F88268482F100F6EDA1 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		343395572680D52A005C1854 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		3433955E2680DE94005C1854 /* InternalMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuRouter.swift; sourceTree = "<group>"; };
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 				34048F7E2684300300F6EDA1 /* ListItemCell.swift */,
 				34048F722684217A00F6EDA1 /* ListItemComponent.swift */,
 				34048F7A26842BDB00F6EDA1 /* ListItemView.swift */,
+				34048F88268482F100F6EDA1 /* BaseTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -801,6 +804,7 @@
 				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
 				343868E526833F6500A51B99 /* GetMomentsByUserIDSession.swift in Sources */,
 				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
+				34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */,
 				343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */,
 				34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */,
 				34BAC6D4267F8B5300F6F144 /* InternalMenuDescriptionCell.swift in Sources */,
