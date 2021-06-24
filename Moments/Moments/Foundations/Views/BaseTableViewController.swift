@@ -19,7 +19,7 @@ class BaseTableViewController: BaseViewController {
         $0.estimatedRowHeight = 100
         $0.contentInsetAdjustmentBehavior = .never
     }
-    private let activityIndicatorView: UIActivityIndicatorView = configure(.init()) {
+    private let activityIndicatorView: UIActivityIndicatorView = configure(.init(style: .large)) {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
     private let errorLabel: UILabel = configure(.init()) {
@@ -95,7 +95,10 @@ private extension BaseTableViewController {
 
     func loadViewModel() {
         viewModel.load()
-            .do(onDispose: { self.activityIndicatorView.rx.isAnimating.onNext(false) })
+            .do(onDispose: {
+                self.activityIndicatorView.rx.isAnimating.onNext(false)
+                self.tableView.refreshControl?.endRefreshing()
+            })
             .map { false }
             .startWith(true)
             .distinctUntilChanged()
