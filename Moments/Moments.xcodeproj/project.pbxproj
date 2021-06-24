@@ -22,6 +22,7 @@
 		34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F842684706600F6EDA1 /* MomentListItemView.swift */; };
 		34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */; };
 		34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F88268482F100F6EDA1 /* BaseTableViewController.swift */; };
+		34048F8C26848B8900F6EDA1 /* TogglesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */; };
 		343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395572680D52A005C1854 /* UIApplicationExtensions.swift */; };
 		3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433955E2680DE94005C1854 /* InternalMenuRouter.swift */; };
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
@@ -103,6 +104,7 @@
 		34048F842684706600F6EDA1 /* MomentListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemView.swift; sourceTree = "<group>"; };
 		34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemViewModel.swift; sourceTree = "<group>"; };
 		34048F88268482F100F6EDA1 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesDataSource.swift; sourceTree = "<group>"; };
 		343395572680D52A005C1854 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		3433955E2680DE94005C1854 /* InternalMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuRouter.swift; sourceTree = "<group>"; };
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
@@ -226,6 +228,14 @@
 				34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		34048F8A26848B7400F6EDA1 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 		343395562680D511005C1854 /* Extensions */ = {
@@ -402,6 +412,7 @@
 		34BAC6BE267F862900F6F144 /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
+				34048F8A26848B7400F6EDA1 /* DataStore */,
 				343395562680D511005C1854 /* Extensions */,
 				343A46EC268333DB00950DFD /* Networking */,
 				34BAC6D9267F8DE900F6F144 /* Routing */,
@@ -819,6 +830,7 @@
 				34048F7B26842BDB00F6EDA1 /* ListItemView.swift in Sources */,
 				34048F6D26841C9400F6EDA1 /* ListItemViewModel.swift in Sources */,
 				34048F6B26841C7600F6EDA1 /* ListViewModel.swift in Sources */,
+				34048F8C26848B8900F6EDA1 /* TogglesDataSource.swift in Sources */,
 				343868DF268338BB00A51B99 /* MomentsDetails.swift in Sources */,
 				34048F832684350F00F6EDA1 /* MomentsListViewController.swift in Sources */,
 				34048F6926841C7000F6EDA1 /* MomentsListViewModel.swift in Sources */,
