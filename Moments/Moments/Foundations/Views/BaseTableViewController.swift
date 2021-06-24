@@ -39,7 +39,7 @@ class BaseTableViewController: BaseViewController {
             self.setupBindings()
         }
 
-        loadViewModel()
+        loadItems()
     }
 }
 
@@ -75,7 +75,7 @@ private extension BaseTableViewController {
         refreshControl.rx.controlEvent(.valueChanged)
             .map { refreshControl.isRefreshing }
             .filter { $0 }
-            .bind { [weak self] _ in self?.loadViewModel() }
+            .bind { [weak self] _ in self?.loadItems() }
             .disposed(by: disposeBag)
 
         tableView.refreshControl = refreshControl
@@ -91,10 +91,16 @@ private extension BaseTableViewController {
         viewModel.listItems
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+
+        viewModel.hasError
+            .map { !$0 }
+            .bind(to: errorLabel.rx.isHidden)
+            .disposed(by: disposeBag)
     }
 
-    func loadViewModel() {
-        viewModel.load()
+    func loadItems() {
+        self.viewModel.hasError.onNext(false)
+        viewModel.loadItems()
             .do(onDispose: {
                 self.activityIndicatorView.rx.isAnimating.onNext(false)
                 self.tableView.refreshControl?.endRefreshing()
