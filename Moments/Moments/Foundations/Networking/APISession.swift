@@ -16,11 +16,11 @@ public enum APISessionError: Error {
 }
 
 protocol APISession {
-    associatedtype ModelType: Codable
+    associatedtype ResponseType: Codable
 
     var defaultHeaders: HTTPHeaders { get }
 
-    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ModelType>
+    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ResponseType>
 }
 
 extension APISession {
@@ -39,13 +39,13 @@ extension APISession {
         return headers
     }
 
-    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ModelType> {
+    func post(_ path: String, parameters: Parameters?, headers: HTTPHeaders) -> Observable<ResponseType> {
         return request(path, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
     }
 }
 
 private extension APISession {
-    func request(_ path: String, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders) -> Observable<ModelType> {
+    func request(_ path: String, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders) -> Observable<ResponseType> {
         let url = baseUrl.appendingPathComponent(path)
         var allHeaders = defaultHeaders
         headers.forEach { allHeaders.add($0) }
@@ -62,7 +62,7 @@ private extension APISession {
                             return
                         }
                         do {
-                            let model = try JSONDecoder().decode(ModelType.self, from: data)
+                            let model = try JSONDecoder().decode(ResponseType.self, from: data)
                             observer.onNext(model)
                             observer.onCompleted()
                         } catch {
