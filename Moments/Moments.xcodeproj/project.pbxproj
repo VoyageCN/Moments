@@ -14,8 +14,9 @@
 		34048F712684216900F6EDA1 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F702684216800F6EDA1 /* BaseTableViewCell.swift */; };
 		34048F732684217A00F6EDA1 /* ListItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F722684217A00F6EDA1 /* ListItemComponent.swift */; };
 		34048F752684218700F6EDA1 /* UserProfileListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F742684218700F6EDA1 /* UserProfileListItemView.swift */; };
-		34048F772684219000F6EDA1 /* UserProfileListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F762684219000F6EDA1 /* UserProfileListItemCell.swift */; };
 		34048F79268427A400F6EDA1 /* UserProfileListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F78268427A400F6EDA1 /* UserProfileListItemViewModel.swift */; };
+		34048F7B26842BDB00F6EDA1 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F7A26842BDB00F6EDA1 /* ListItemView.swift */; };
+		34048F7D26842C5E00F6EDA1 /* BaseListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F7C26842C5E00F6EDA1 /* BaseListItemView.swift */; };
 		343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395572680D52A005C1854 /* UIApplicationExtensions.swift */; };
 		3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433955E2680DE94005C1854 /* InternalMenuRouter.swift */; };
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
@@ -94,8 +95,9 @@
 		34048F702684216800F6EDA1 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		34048F722684217A00F6EDA1 /* ListItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemComponent.swift; sourceTree = "<group>"; };
 		34048F742684218700F6EDA1 /* UserProfileListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileListItemView.swift; sourceTree = "<group>"; };
-		34048F762684219000F6EDA1 /* UserProfileListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileListItemCell.swift; sourceTree = "<group>"; };
 		34048F78268427A400F6EDA1 /* UserProfileListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileListItemViewModel.swift; sourceTree = "<group>"; };
+		34048F7A26842BDB00F6EDA1 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		34048F7C26842C5E00F6EDA1 /* BaseListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListItemView.swift; sourceTree = "<group>"; };
 		343395572680D52A005C1854 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		3433955E2680DE94005C1854 /* InternalMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuRouter.swift; sourceTree = "<group>"; };
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
@@ -210,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				34048F742684218700F6EDA1 /* UserProfileListItemView.swift */,
-				34048F762684219000F6EDA1 /* UserProfileListItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -472,6 +473,8 @@
 				34BAC6C9267F87FE00F6F144 /* BaseViewController.swift */,
 				34048F702684216800F6EDA1 /* BaseTableViewCell.swift */,
 				34048F722684217A00F6EDA1 /* ListItemComponent.swift */,
+				34048F7A26842BDB00F6EDA1 /* ListItemView.swift */,
+				34048F7C26842C5E00F6EDA1 /* BaseListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -811,11 +814,12 @@
 				34048F752684218700F6EDA1 /* UserProfileListItemView.swift in Sources */,
 				34BAC6D0267F890700F6F144 /* InternalMenuSection.swift in Sources */,
 				34048F6526841AB800F6EDA1 /* MomentsRepo.swift in Sources */,
-				34048F772684219000F6EDA1 /* UserProfileListItemCell.swift in Sources */,
 				343A46EB2683331F00950DFD /* Configurations.swift in Sources */,
 				34BAC6CC267F884900F6F144 /* InternalMenuViewController.swift in Sources */,
 				34BAC6CE267F888F00F6F144 /* InternalMenuViewModel.swift in Sources */,
 				343868E526833F6500A51B99 /* GetMomentsByUserIDAPISession.swift in Sources */,
+				34048F7B26842BDB00F6EDA1 /* ListItemView.swift in Sources */,
+				34048F7D26842C5E00F6EDA1 /* BaseListItemView.swift in Sources */,
 				348F10EC267E47D100EA5EAB /* SceneDelegate.swift in Sources */,
 				343A46E32683261200950DFD /* Strings.swift in Sources */,
 				343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */,
