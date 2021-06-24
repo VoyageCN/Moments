@@ -20,6 +20,8 @@
 // Moments List
 "momentsList.errorMessage" = "出错啦，请稍后再试";
 
+"internalMenu.likeButtonForMomentEnabled" = "开启点赞按钮";
+
 // Development messages
 "development.defaultConfiguration" = "Default Configuration";
 "development.fatalErrorInitCoderNotImplemented" = "init(coder:) has not been implemented";

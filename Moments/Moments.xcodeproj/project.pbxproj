@@ -23,6 +23,8 @@
 		34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */; };
 		34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F88268482F100F6EDA1 /* BaseTableViewController.swift */; };
 		34048F8C26848B8900F6EDA1 /* TogglesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */; };
+		34048F8E26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F8D26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift */; };
+		34048F9026848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F8F26848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift */; };
 		343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395572680D52A005C1854 /* UIApplicationExtensions.swift */; };
 		3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433955E2680DE94005C1854 /* InternalMenuRouter.swift */; };
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
@@ -105,6 +107,8 @@
 		34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemViewModel.swift; sourceTree = "<group>"; };
 		34048F88268482F100F6EDA1 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesDataSource.swift; sourceTree = "<group>"; };
+		34048F8D26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuFeatureToggleCell.swift; sourceTree = "<group>"; };
+		34048F8F26848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuFeatureToggleItemViewModel.swift; sourceTree = "<group>"; };
 		343395572680D52A005C1854 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		3433955E2680DE94005C1854 /* InternalMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuRouter.swift; sourceTree = "<group>"; };
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 				34BAC6D1267F898500F6F144 /* InternalMenuItemViewModel.swift */,
 				34BAC6CF267F890700F6F144 /* InternalMenuSection.swift */,
 				34BAC6CD267F888F00F6F144 /* InternalMenuViewModel.swift */,
+				34048F8F26848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */,
 				34BAC6D3267F8B5300F6F144 /* InternalMenuDescriptionCell.swift */,
 				34BAC6CB267F884900F6F144 /* InternalMenuViewController.swift */,
+				34048F8D26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -802,6 +808,7 @@
 			files = (
 				343A46EE268333E500950DFD /* API.swift in Sources */,
 				343A46F02683349F00950DFD /* APISession.swift in Sources */,
+				34048F9026848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift in Sources */,
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
 				34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */,
 				34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */,
@@ -815,6 +822,7 @@
 				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
 				343868E526833F6500A51B99 /* GetMomentsByUserIDSession.swift in Sources */,
 				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
+				34048F8E26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift in Sources */,
 				34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */,
 				343395632680E02E005C1854 /* InternalMenuActionTriggerItemViewModel.swift in Sources */,
 				34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */,
