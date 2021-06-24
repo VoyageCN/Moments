@@ -20,7 +20,6 @@ final class UserProfileListItemView: BaseListItemView {
         $0.asAvatar(cornerRadius: 8)
         $0.contentMode = .scaleAspectFit
         $0.accessibilityIgnoresInvertColors = true
-        $0.clipsToBounds = true
     }
 
     private let nameLabel: UILabel = configure(.init()) {
@@ -33,10 +32,32 @@ final class UserProfileListItemView: BaseListItemView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        addSubview(backgroundImageView)
-        addSubview(avatarImageView)
-        addSubview(nameLabel)
+        setupUI()
+        setConstrants()
+    }
 
+    // swiftlint:disable unavailable_function
+    required init?(coder: NSCoder) {
+        fatalError(L10n.Development.fatalErrorInitCoderNotImplemented)
+    }
+
+    override func update(with viewModel: ListItemViewModel) {
+        guard let viewModel = viewModel as? UserProfileListItemViewModel else { return }
+
+        backgroundImageView.kf.setImage(with: viewModel.backgroundImageURL)
+        avatarImageView.kf.setImage(with: viewModel.avatarURL)
+        nameLabel.text = viewModel.name
+    }
+}
+
+private extension UserProfileListItemView {
+    func setupUI() {
+        [backgroundImageView, avatarImageView, nameLabel].forEach {
+            addSubview($0)
+        }
+    }
+
+    func setConstrants() {
         backgroundImageView.snp.makeConstraints {
             $0.top.equalTo(self.snp.top)
             $0.leading.equalTo(self.snp.leading)
@@ -56,18 +77,5 @@ final class UserProfileListItemView: BaseListItemView {
             $0.right.equalTo(self.avatarImageView.snp.left).offset(-Spacing.medium)
             $0.centerY.equalTo(self.avatarImageView.snp.centerY)
         }
-    }
-
-    // swiftlint:disable unavailable_function
-    required init?(coder: NSCoder) {
-        fatalError(L10n.Development.fatalErrorInitCoderNotImplemented)
-    }
-
-    override func update(with viewModel: ListItemViewModel) {
-        guard let viewModel = viewModel as? UserProfileListItemViewModel else { return }
-
-        backgroundImageView.kf.setImage(with: viewModel.backgroundImageURL)
-        avatarImageView.kf.setImage(with: viewModel.avatarURL)
-        nameLabel.text = viewModel.name
     }
 }

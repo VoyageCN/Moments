@@ -19,6 +19,8 @@
 		34048F7D26842C5E00F6EDA1 /* BaseListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F7C26842C5E00F6EDA1 /* BaseListItemView.swift */; };
 		34048F7F2684300300F6EDA1 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F7E2684300300F6EDA1 /* ListItemCell.swift */; };
 		34048F832684350F00F6EDA1 /* MomentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F822684350F00F6EDA1 /* MomentsListViewController.swift */; };
+		34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F842684706600F6EDA1 /* MomentListItemView.swift */; };
+		34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */; };
 		343395582680D52A005C1854 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395572680D52A005C1854 /* UIApplicationExtensions.swift */; };
 		3433955F2680DE94005C1854 /* InternalMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433955E2680DE94005C1854 /* InternalMenuRouter.swift */; };
 		343395612680E019005C1854 /* DesignKitDemoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */; };
@@ -97,6 +99,8 @@
 		34048F7C26842C5E00F6EDA1 /* BaseListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListItemView.swift; sourceTree = "<group>"; };
 		34048F7E2684300300F6EDA1 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
 		34048F822684350F00F6EDA1 /* MomentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsListViewController.swift; sourceTree = "<group>"; };
+		34048F842684706600F6EDA1 /* MomentListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemView.swift; sourceTree = "<group>"; };
+		34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentListItemViewModel.swift; sourceTree = "<group>"; };
 		343395572680D52A005C1854 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		3433955E2680DE94005C1854 /* InternalMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuRouter.swift; sourceTree = "<group>"; };
 		343395602680E019005C1854 /* DesignKitDemoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoItemViewModel.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 			children = (
 				34048F822684350F00F6EDA1 /* MomentsListViewController.swift */,
 				34048F742684218700F6EDA1 /* UserProfileListItemView.swift */,
+				34048F842684706600F6EDA1 /* MomentListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			children = (
 				34048F6826841C7000F6EDA1 /* MomentsListViewModel.swift */,
 				34048F78268427A400F6EDA1 /* UserProfileListItemViewModel.swift */,
+				34048F862684788900F6EDA1 /* MomentListItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -783,6 +789,8 @@
 				343A46EE268333E500950DFD /* API.swift in Sources */,
 				343A46F02683349F00950DFD /* APISession.swift in Sources */,
 				348F10EA267E47D100EA5EAB /* AppDelegate.swift in Sources */,
+				34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */,
+				34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */,
 				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
 				34048F7D26842C5E00F6EDA1 /* BaseListItemView.swift in Sources */,
 				34048F712684216900F6EDA1 /* BaseTableViewCell.swift in Sources */,
