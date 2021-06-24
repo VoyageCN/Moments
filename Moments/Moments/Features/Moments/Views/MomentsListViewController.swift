@@ -40,7 +40,10 @@ final class MomentsListViewController: BaseViewController {
 
         setupUI()
         setConstraints()
-        setupBindings()
+
+        DispatchQueue.main.async {
+            self.setupBindings()
+        }
     }
 }
 
