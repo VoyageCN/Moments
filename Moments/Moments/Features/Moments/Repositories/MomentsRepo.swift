@@ -26,5 +26,4 @@ struct MomentsRepo: MomentsRepoType {
     func getMoments(userID: String) -> Observable<MomentsDetails> {
         getMomentsByUserIDAPISessionBuilder().getMoments(userID: userID)
     }
-
 }

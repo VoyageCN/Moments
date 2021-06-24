@@ -18,6 +18,7 @@ extension UIApplication {
         return keyWindow?.rootViewController
     }
 
+    // swiftlint:disable no_hardcoded_strings
     static var appVersion: String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
     }
