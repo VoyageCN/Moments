@@ -45,8 +45,8 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
 
         // swiftlint:disable no_hardcoded_strings
         private static let query = """
-            query getMomentsDetailsByUserID(userID: $userID!) {
-                getMomentsDetailsByUserID(userID: $userID
+            query getMomentsDetailsByUserID($userID: ID!) {
+                getMomentsDetailsByUserID(userID: $userID) {
                     userDetails {
                         id
                         name
@@ -62,7 +62,7 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
                         type
                         title
                         photos
-                        createdData
+                        createdDate
                     }
                 }
             }

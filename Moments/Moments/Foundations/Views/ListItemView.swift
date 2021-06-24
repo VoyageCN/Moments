@@ -9,13 +9,5 @@ import Foundation
 
 protocol ListItemView {
     associatedtype ViewModel
-    func update(_ viewModel: ViewModel)
-}
-
-extension ListItemView {
-    // Implemented by conformed class
-    // swiftlint:disable unavailable_function
-    func update(_ viewModel: ViewModel) {
-        fatalError(L10n.Development.fatalErrorInitCoderNotImplemented)
-    }
+    func update(with viewModel: ViewModel)
 }
