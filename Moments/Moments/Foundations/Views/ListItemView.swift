@@ -14,7 +14,7 @@ protocol ListItemView {
 
 extension ListItemView {
     // Implemented by conformed class
-    // swiftlint:disable available_function
+    // swiftlint:disable unavailable_function
     func update(_ viewModel: ViewModel) {
         fatalError(L10n.Development.fatalErrorInitCoderNotImplemented)
     }
