@@ -19,7 +19,6 @@ class InternalMenuFeatureToggleCell: InternalMenuCell<InternalMenuFeatureToggleI
 
         selectionStyle = .none
         accessoryView = switchControl
-        switchControl.addTarget(self, action: #selector(toggleSwitch), for: .touchUpInside)
     }
 
     // swiftlint:disable unavailable_function
@@ -31,14 +30,5 @@ class InternalMenuFeatureToggleCell: InternalMenuCell<InternalMenuFeatureToggleI
         self.item = item
         textLabel?.text = item.title
         switchControl.isOn = item.on
-    }
-
-    @objc
-    func toggleSwitch() {
-        if switchControl.isOn {
-            item?.toggleOn()
-        } else {
-            item?.toggleOff()
-        }
     }
 }
