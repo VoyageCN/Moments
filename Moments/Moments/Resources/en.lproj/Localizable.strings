@@ -13,12 +13,12 @@
 "internalMenu.CFBundleVersion" = "CFBundleVersion";
 "internalMenu.designKitDemo" = "DesignKit Demo";
 "internalMenu.featureToggles" = "Feature Toggles";
+"internalMenu.likeButtonForMomentEnabled" = "Like Button Enabled";
+"internalMenu.favoriteButton" = "Favorite Button";
 
 "internalMenu.typography" = "Typography";
 "internalMenu.colors" = "Colors";
 "internalMenu.avatars" = "Avatars";
-
-"internalMenu.likeButtonForMomentEnabled" = "Like Button Enabled";
 
 // Moments List
 "momentsList.errorMessage" = "Something went wrong, please try again later";

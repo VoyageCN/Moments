@@ -13,6 +13,8 @@
 "internalMenu.CFBundleVersion" = "CFBundleVersion";
 "internalMenu.designKitDemo" = "DesignKit 范例";
 "internalMenu.featureToggles" = "功能开关";
+"internalMenu.likeButtonForMomentEnabled" = "开启点赞按钮";
+"internalMenu.favoriteButton" = "点赞按钮";
 
 "internalMenu.typography" = "字体";
 "internalMenu.colors" = "颜色";
@@ -20,8 +22,6 @@
 
 // Moments List
 "momentsList.errorMessage" = "出错啦，请稍后再试";
-
-"internalMenu.likeButtonForMomentEnabled" = "开启点赞按钮";
 
 // Development messages
 "development.defaultConfiguration" = "Default Configuration";

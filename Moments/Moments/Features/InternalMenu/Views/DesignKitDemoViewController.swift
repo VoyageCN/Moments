@@ -12,15 +12,15 @@ final class DesignKitDemoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupViews()
+        setupUI()
     }
 }
 
 private extension DesignKitDemoViewController {
-    func setupViews() {
+    func setupUI() {
         view.backgroundColor = .systemBackground
 
-        let scrollView = configure(UIScrollView()) {
+        let scrollView: UIScrollView = configure(.init()) {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
 
@@ -32,10 +32,11 @@ private extension DesignKitDemoViewController {
             $0.trailing.equalToSuperview()
         }
 
-        let rootStackView = configure(UIStackView(arrangedSubviews: [
+        let rootStackView: UIStackView = configure(.init(arrangedSubviews: [
             buildTypography(),
             buildColors(),
-            buildAvatars()
+            buildAvatars(),
+            buildFavoriteButtons()
         ])) {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.axis = .vertical
@@ -73,18 +74,18 @@ private extension DesignKitDemoViewController {
         ]
         // swiftlint:enable no_hardcoded_strings
 
-        let title = configure(UILabel()) {
+        let title: UILabel = configure(.init()) {
             $0.text = L10n.InternalMenu.typography
             $0.font = UIFont.designKit.title1
         }
 
-        let stackView = configure(UIStackView(arrangedSubviews: [title])) {
+        let stackView: UIStackView = configure(.init(arrangedSubviews: [title])) {
             $0.axis = .vertical
             $0.spacing = 8
         }
         items.forEach {
             let item = $0
-            let label = configure(UILabel()) {
+            let label: UILabel = configure(.init()) {
                 $0.text = item.0
                 $0.setDynamicFont(item.1)
             }
@@ -110,19 +111,19 @@ private extension DesignKitDemoViewController {
         ]
         // swiftlint:enable no_hardcoded_strings
 
-        let title = configure(UILabel()) {
+        let title: UILabel = configure(.init()) {
             $0.text = L10n.InternalMenu.colors
             $0.font = UIFont.designKit.title1
         }
 
-        let stackView = configure(UIStackView(arrangedSubviews: [title])) {
+        let stackView: UIStackView = configure(.init(arrangedSubviews: [title])) {
             $0.axis = .vertical
             $0.spacing = 0
         }
 
         items.forEach {
             let item = $0
-            let label = configure(UILabel()) {
+            let label: UILabel = configure(.init()) {
                 $0.text = item.0
                 $0.textColor = UIColor.designKit.primaryText
                 $0.backgroundColor = item.1
@@ -144,19 +145,19 @@ private extension DesignKitDemoViewController {
         ]
         // swiftlint:enable no_hardcoded_strings
 
-        let title = configure(UILabel()) {
+        let title: UILabel = configure(.init()) {
             $0.text = L10n.InternalMenu.avatars
             $0.font = UIFont.designKit.title1
         }
 
-        let stackView = configure(UIStackView(arrangedSubviews: [title])) {
+        let stackView: UIStackView = configure(.init(arrangedSubviews: [title])) {
             $0.axis = .vertical
             $0.spacing = 8
         }
 
         items.forEach {
             let item = $0
-            let imageView = configure(UIImageView()) {
+            let imageView: UIImageView = configure(.init()) {
                 $0.asAvatar(cornerRadius: 12)
                 $0.contentMode = .scaleAspectFit
                 $0.accessibilityIgnoresInvertColors = true
@@ -172,5 +173,9 @@ private extension DesignKitDemoViewController {
             stackView.addArrangedSubview(imageView)
         }
         return stackView
+    }
+
+    func buildFavoriteButtons() -> UIView {
+        return UIView()
     }
 }
