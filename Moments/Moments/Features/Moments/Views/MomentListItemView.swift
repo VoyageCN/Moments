@@ -121,19 +121,18 @@ class MomentListItemView: BaseListItemView {
         }
 
         viewModel.likes.forEach {
-            if let avatarURL = URL(string: $0) {
-                let avatar: UIImageView = configure(.init()) {
-                    $0.translatesAutoresizingMaskIntoConstraints = false
-                    $0.asAvatar(cornerRadius: 2)
-                    $0.kf.setImage(with: avatarURL)
-                }
-
-                avatar.snp.makeConstraints {
-                    $0.width.equalTo(20)
-                    $0.height.equalTo(20)
-                }
-                likesStackView.addArrangedSubview(avatar)
+            let avatarURL = $0
+            let avatar: UIImageView = configure(.init()) {
+                $0.translatesAutoresizingMaskIntoConstraints = false
+                $0.asAvatar(cornerRadius: 2)
+                $0.kf.setImage(with: avatarURL)
             }
+
+            avatar.snp.makeConstraints {
+                $0.width.equalTo(20)
+                $0.height.equalTo(20)
+            }
+            likesStackView.addArrangedSubview(avatar)
         }
     }
 }
@@ -151,6 +150,10 @@ private extension MomentListItemView {
             $0.axis = .vertical
             $0.alignment = .leading
             $0.spacing = Spacing.extraSmall
+        }
+
+        if toggleDataStore.isToggleOn(.isLikeButtonForMomentsEnabled) {
+            verticalStackView.addArrangedSubview(likesStackView)
         }
 
         let horizontalStackView: UIStackView = configure(.init(arrangedSubviews: [

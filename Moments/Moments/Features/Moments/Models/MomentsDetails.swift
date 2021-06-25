@@ -27,10 +27,15 @@ struct MomentsDetails: Codable {
         let photos: [String]
         let createdDate: String
         let isLiked: Bool?
-        let likes: [String]?
+        let likes: [LikedUserDetails]?
 
         struct MomentUserDetails: Codable {
             let name: String
+            let avatar: String
+        }
+
+        struct LikedUserDetails: Codable {
+            let id: String
             let avatar: String
         }
 

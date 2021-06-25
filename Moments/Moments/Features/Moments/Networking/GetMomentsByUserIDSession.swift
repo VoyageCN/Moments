@@ -65,7 +65,10 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
                         photos
                         createdDate
                         isLiked @include(if: $withLikes),
-
+                        likes @include(if: $withLikes) {
+                            id
+                            avatar
+                        }
                     }
                 }
             }
