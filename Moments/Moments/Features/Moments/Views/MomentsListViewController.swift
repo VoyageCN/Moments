@@ -13,6 +13,6 @@ import DesignKit
 final class MomentsListViewController: BaseTableViewController {
     override init() {
         super.init()
-        viewModel = MomentsListViewModel(userID: "1", momentsRepo: MomentsRepo.shared)
+        viewModel = MomentsListViewModel(userID: UserDataStore.current.userID, momentsRepo: MomentsRepo.shared)
     }
 }

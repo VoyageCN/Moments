@@ -26,6 +26,8 @@ struct MomentsDetails: Codable {
         let url: String?
         let photos: [String]
         let createdDate: String
+        let isLiked: Bool?
+        let likes: [String]?
 
         struct MomentUserDetails: Codable {
             let name: String

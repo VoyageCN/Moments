@@ -10,6 +10,7 @@ import RxSwift
 
 protocol MomentsRepoType {
     func getMoments(userID: String) -> Observable<MomentsDetails>
+    func updataLike(momentID: String, from userID: String)
 }
 
 struct MomentsRepo: MomentsRepoType {
@@ -25,5 +26,8 @@ struct MomentsRepo: MomentsRepoType {
 
     func getMoments(userID: String) -> Observable<MomentsDetails> {
         getMomentsByUserIDSessionBuilder().getMoments(userID: userID)
+    }
+
+    func updataLike(momentID: String, from userID: String) {
     }
 }
