@@ -101,9 +101,9 @@ private extension BaseTableViewController {
     func loadItems() {
         self.viewModel.hasError.onNext(false)
         viewModel.loadItems()
-            .do(onDispose: {
-                self.activityIndicatorView.rx.isAnimating.onNext(false)
-                self.tableView.refreshControl?.endRefreshing()
+            .do(onDispose: { [weak self] in
+                self?.activityIndicatorView.rx.isAnimating.onNext(false)
+                self?.tableView.refreshControl?.endRefreshing()
             })
             .map { false }
             .startWith(true)

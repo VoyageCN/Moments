@@ -31,8 +31,6 @@ final class InternalMenuViewController: BaseViewController {
             self.setupBindings()
         }
     }
-
-
 }
 
 private extension InternalMenuViewController {
@@ -53,8 +51,8 @@ private extension InternalMenuViewController {
 
     func setupBindings() {
         let dismissBarButtonItem: UIBarButtonItem = UIBarButtonItem(systemItem: .done)
-        dismissBarButtonItem.rx.tap.subscribe(onNext: {
-            self.dismiss(animated: true, completion: nil)
+        dismissBarButtonItem.rx.tap.subscribe(onNext: { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
         }).disposed(by: disposeBag)
         navigationItem.rightBarButtonItem = dismissBarButtonItem
 
