@@ -34,7 +34,7 @@ final class InternalMenuLikeButtonToggleItemViewModel: InternalMenuFeatureToggle
 
     init(toggleStore: TogglesDataStoreType) {
         self.toggleDataStore = toggleStore
-        self.isOn = toggleStore.isToggleOn(.isLikeButtonForMomentsEnabled)
+        isOn = toggleDataStore.isToggleOn(.isLikeButtonForMomentsEnabled)
     }
 
     override func toggle(isOn: Bool) {

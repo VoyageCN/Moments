@@ -47,12 +47,24 @@ class MomentListItemView: BaseListItemView {
         $0.numberOfLines = 1
     }
 
+    private let favoriteButton: UIButton = configure(.init()) {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.asHeartFavoriteButton()
+    }
+
     private let dividerView: UIView = configure(.init()) {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = UIColor.designKit.line
     }
 
-    override init(frame: CGRect) {
+    private let toggleDataStore: TogglesDataStoreType
+
+    override convenience init(frame: CGRect = .zero) {
+        self.init(frame: frame, toggleDataStore: TogglesDataSotre.shared)
+    }
+
+    init(frame: CGRect = .zero, toggleDataStore: TogglesDataStoreType = TogglesDataSotre.shared) {
+        self.toggleDataStore = toggleDataStore
         super.init(frame: frame)
 
         setupUI()
@@ -108,6 +120,10 @@ private extension MomentListItemView {
             $0.leading.equalToSuperview().offset(Spacing.medium)
             $0.trailing.equalToSuperview().offset(-Spacing.medium)
         }
+
+        if toggleDataStore.isToggleOn(.isLikeButtonForMomentsEnabled) {
+            addSubview(favoriteButton)
+        }
     }
 
     func setConstraints() {
@@ -119,6 +135,13 @@ private extension MomentListItemView {
         momentImageView.snp.makeConstraints {
             $0.height.equalTo(120)
             $0.width.equalTo(240)
+        }
+
+        if toggleDataStore.isToggleOn(.isLikeButtonForMomentsEnabled) {
+            favoriteButton.snp.makeConstraints {
+                $0.bottom.equalToSuperview().offset(-Spacing.medium)
+                $0.trailing.equalToSuperview().offset(-Spacing.medium)
+            }
         }
 
         dividerView.snp.makeConstraints {
