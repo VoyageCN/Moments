@@ -176,6 +176,49 @@ private extension DesignKitDemoViewController {
     }
 
     func buildFavoriteButtons() -> UIView {
-        return UIView()
+        let title: UILabel = configure(.init()) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.text = L10n.InternalMenu.favoriteButton
+            $0.font = UIFont.designKit.title1
+        }
+
+        let starFavoriteButtonLabel: UILabel = configure(.init()) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.text = L10n.InternalMenu.starFavoriteButton
+            $0.textColor = UIColor.designKit.primaryText
+        }
+
+        let starFavoriteButton: UIButton = configure(.init()) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.asStarFavoriteButton()
+        }
+
+        let starFavoriteButtonStackView: UIStackView = configure(.init(arrangedSubviews: [starFavoriteButtonLabel, starFavoriteButton])) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.spacing = 8
+        }
+
+        let heartFavoriteButtonLabel: UILabel = configure(.init()) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.text = L10n.InternalMenu.starFavoriteButton
+            $0.textColor = UIColor.designKit.primaryText
+        }
+
+        let heaertFavoriteButton: UIButton = configure(.init()) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.asHeartFavoriteButton()
+        }
+
+        let heartFavoriteButtonStackView: UIStackView = configure(.init(arrangedSubviews: [heartFavoriteButtonLabel, heaertFavoriteButton])) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.spacing = 8
+        }
+
+        let stackView: UIStackView = configure(.init(arrangedSubviews: [title, starFavoriteButtonStackView, heartFavoriteButtonStackView])) {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.axis = .vertical
+            $0.spacing = 8
+        }
+        return stackView
     }
 }

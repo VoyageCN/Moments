@@ -16,6 +16,9 @@
 "internalMenu.likeButtonForMomentEnabled" = "Like Button Enabled";
 "internalMenu.favoriteButton" = "Favorite Button";
 
+"internalMenu.starFavoriteButton" = "Star favorite button";
+"internalMenu.heartFavoriteButton" = "Heart favorite button";
+
 "internalMenu.typography" = "Typography";
 "internalMenu.colors" = "Colors";
 "internalMenu.avatars" = "Avatars";
