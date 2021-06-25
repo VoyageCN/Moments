@@ -27,6 +27,12 @@ class InternalMenuFeatureToggleCell: InternalMenuCell<InternalMenuFeatureToggleI
         fatalError(L10n.Development.fatalErrorInitCoderNotImplemented)
     }
 
+    override func update(_ item: InternalMenuFeatureToggleItemViewModel) {
+        self.item = item
+        textLabel?.text = item.title
+        switchControl.isOn = item.on
+    }
+
     @objc
     func toggleSwitch() {
         if switchControl.isOn {

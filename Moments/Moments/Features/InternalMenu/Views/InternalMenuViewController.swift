@@ -18,21 +18,33 @@ final class InternalMenuViewController: BaseViewController {
 
         $0.register(InternalMenuDescriptionCell.self, forCellReuseIdentifier: InternalMenuItemType.description.rawValue)
         $0.register(InternalMenuActionTriggerCell.self, forCellReuseIdentifier: InternalMenuItemType.actionTrigger.rawValue)
+        $0.register(InternalMenuFeatureToggleCell.self, forCellReuseIdentifier: InternalMenuItemType.featureToggle.rawValue)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        setConstraints()
+
+        DispatchQueue.main.async {
+            self.setupBindings()
+        }
+    }
+
+
+}
+
+private extension InternalMenuViewController {
+    func setupUI() {
         title = viewModel.title
+        view.addSubview(tableView)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
                                                             target: self,
                                                             action: #selector(dismissModal))
-
-        setupLayout()
-        setupBindings()
     }
 
-    func setupLayout() {
+    func setConstraints() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -40,6 +52,12 @@ final class InternalMenuViewController: BaseViewController {
     }
 
     func setupBindings() {
+        let dismissBarButtonItem: UIBarButtonItem = UIBarButtonItem(systemItem: .done)
+        dismissBarButtonItem.rx.tap.subscribe(onNext: {
+            self.dismiss(animated: true, completion: nil)
+        }).disposed(by: disposeBag)
+        navigationItem.rightBarButtonItem = dismissBarButtonItem
+
         let dataSource = RxTableViewSectionedReloadDataSource<InternalMenuSection>(
             configureCell: { _, tableView, indexPath, item in
                 let cell = tableView.dequeueReusableCell(withIdentifier: item.type.rawValue, for: indexPath)

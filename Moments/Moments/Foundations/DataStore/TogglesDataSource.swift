@@ -19,10 +19,12 @@ enum Toggle: String {
 struct TogglesDataSotre: TogglesDataStoreType {
     private let userDefaults: UserDefaults
 
-    init(userDefaults: UserDefaults) {
+    private init(userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
         self.userDefaults.register(defaults: [Toggle.isLikeButtonForMomentsEnabled.rawValue: false])
     }
+
+    static let shared = TogglesDataSotre(userDefaults: .standard)
 
     func isToggleOn(_ toggle: Toggle) -> Bool {
         return userDefaults.bool(forKey: toggle.rawValue)

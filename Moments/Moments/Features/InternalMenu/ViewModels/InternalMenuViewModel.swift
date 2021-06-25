@@ -27,9 +27,13 @@ class InternalMenuViewModel: InternalMenuViewModelType {
 
         let designKitSection = InternalMenuSection(title: L10n.InternalMenu.designKitDemo, items: [DesignKitDemoItemViewModel(router: router)])
 
+        let featureTogglesSection = InternalMenuSection(title: L10n.InternalMenu.featureToggles,
+                                                        items: [InternalMenuLikeButtonToggleItemViewModel(toggleStore: TogglesDataSotre.shared)])
+
         sections = .just([
             infoSection,
-            designKitSection
+            designKitSection,
+            featureTogglesSection
         ])
     }
 }
