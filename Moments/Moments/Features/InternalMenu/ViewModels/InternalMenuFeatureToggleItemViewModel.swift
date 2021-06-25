@@ -16,8 +16,7 @@ class InternalMenuFeatureToggleItemViewModel: InternalMenuItemViewModel {
     var on: Bool { false }
 
     // swiftlint:disable unavailable_function
-    func toggleOn() { fatalError(L10n.Development.fatalErrorSubclassToImplement) }
-    func toggleOff() { fatalError(L10n.Development.fatalErrorSubclassToImplement) }
+    func toggle(isOn: Bool) { fatalError(L10n.Development.fatalErrorSubclassToImplement) }
     func select() { }
 }
 
@@ -38,11 +37,7 @@ final class InternalMenuLikeButtonToggleItemViewModel: InternalMenuFeatureToggle
         self.isOn = toggleStore.isToggleOn(.isLikeButtonForMomentsEnabled)
     }
 
-    override func toggleOn() {
-        toggleDataStore.update(toggle: .isLikeButtonForMomentsEnabled, value: true)
-    }
-
-    override func toggleOff() {
-        toggleDataStore.update(toggle: .isLikeButtonForMomentsEnabled, value: false)
+    override func toggle(isOn: Bool) {
+        toggleDataStore.update(toggle: .isLikeButtonForMomentsEnabled, value: isOn)
     }
 }
