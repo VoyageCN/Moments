@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import DesignKit
 
 class MomentListItemView: BaseListItemView {
@@ -94,7 +96,11 @@ class MomentListItemView: BaseListItemView {
             favoriteButton.rx.tap
                 .bind(onNext: { [weak self] in
                     guard let self = self else { return }
-                    viewModel.like(from: self.userDataStore.userID)
+                    if self.favoriteButton.isSelected {
+                        viewModel.like(from: self.userDataStore.userID).subscribe(onNext: {}).disposed(by: self.disposeBag)
+                    } else {
+                        viewModel.unlike(from: self.userDataStore.userID).subscribe(onNext: {}).disposed(by: self.disposeBag)
+                    }
                 })
                 .disposed(by: disposeBag)
         }

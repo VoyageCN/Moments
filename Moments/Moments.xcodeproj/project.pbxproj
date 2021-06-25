@@ -70,6 +70,7 @@
 		34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BAC6DA267F8DF400F6F144 /* AppRouter.swift */; };
 		34E42E1E267F3C8D003CB6CB /* Pods_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4723E414E8912EE45C039FD /* Pods_Moments.framework */; };
 		34F432DD268586FD00724900 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432DC268586FD00724900 /* UserDataStore.swift */; };
+		34F432DF2685A9E300724900 /* UpdateMomentLikeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432DE2685A9E300724900 /* UpdateMomentLikeSession.swift */; };
 		9BCDD28D2D13968BDBE7AD86 /* Pods_MomentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8D984B0C06360054A3BC16 /* Pods_MomentsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +163,7 @@
 		34BAC6D7267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuDescriptionItemViewModel.swift; sourceTree = "<group>"; };
 		34BAC6DA267F8DF400F6F144 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		34F432DC268586FD00724900 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
+		34F432DE2685A9E300724900 /* UpdateMomentLikeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMomentLikeSession.swift; sourceTree = "<group>"; };
 		88B35FEF6FB7941871ADD860 /* Pods-MomentsTests.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.internal.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.internal.xcconfig"; sourceTree = "<group>"; };
 		9943647161F3A810749BA25E /* Pods-Moments.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.internal.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.internal.xcconfig"; sourceTree = "<group>"; };
 		9C33A38F977E9C7C895E5EA6 /* Pods-MomentsTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.appstore.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.appstore.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				343868E426833F6500A51B99 /* GetMomentsByUserIDSession.swift */,
+				34F432DE2685A9E300724900 /* UpdateMomentLikeSession.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -809,6 +812,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F432DF2685A9E300724900 /* UpdateMomentLikeSession.swift in Sources */,
 				343A46EE268333E500950DFD /* API.swift in Sources */,
 				343A46F02683349F00950DFD /* APISession.swift in Sources */,
 				34048F9026848DBE00F6EDA1 /* InternalMenuFeatureToggleItemViewModel.swift in Sources */,

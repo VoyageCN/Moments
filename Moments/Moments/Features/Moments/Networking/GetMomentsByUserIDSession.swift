@@ -22,8 +22,9 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
         let headers: HTTPHeaders = .init()
 
         // swiftlint:disable no_hardcoded_strings
-        init(userID: String) {
-            let variables: [AnyHashable: Encodable] = ["userID": userID]
+        init(userID: String, toggleDataStore: TogglesDataStoreType = TogglesDataSotre.shared) {
+            let variables: [AnyHashable: Encodable] = ["userID": userID,
+                                                       "withLikes": toggleDataStore.isToggleOn(.isLikeButtonForMomentsEnabled)]
             parameters = [
                 "query": Self.query,
                 "variables": variables
@@ -45,7 +46,7 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
 
         // swiftlint:disable no_hardcoded_strings
         private static let query = """
-            query getMomentsDetailsByUserID($userID: ID!) {
+            query getMomentsDetailsByUserID($userID: ID!, $withLikes: Boolean!) {
                 getMomentsDetailsByUserID(userID: $userID) {
                     userDetails {
                         id
@@ -63,6 +64,8 @@ struct GetMomentsByUserIDSession: GetMomentsByUserIDSessionType {
                         title
                         photos
                         createdDate
+                        isLiked @include(if: $withLikes),
+
                     }
                 }
             }
