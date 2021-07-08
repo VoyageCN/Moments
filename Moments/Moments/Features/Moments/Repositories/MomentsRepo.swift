@@ -41,7 +41,6 @@ struct MomentsRepo: MomentsRepoType {
     }
 
     func updateLike(isLiked: Bool, momentID: String, from userID: String) -> Observable<Void> {
-        updateMomentLikeSessionBuilder().updateLike(isLiked, momentID: momentID, userID: userID)
         return updateMomentLikeSessionBuilder()
             .updateLike(isLiked, momentID: momentID, userID: userID)
             .do(onNext: { momentsDetails.onNext($0) })
