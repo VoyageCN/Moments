@@ -71,6 +71,8 @@
 		34E42E1E267F3C8D003CB6CB /* Pods_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4723E414E8912EE45C039FD /* Pods_Moments.framework */; };
 		34F432DD268586FD00724900 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432DC268586FD00724900 /* UserDataStore.swift */; };
 		34F432DF2685A9E300724900 /* UpdateMomentLikeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432DE2685A9E300724900 /* UpdateMomentLikeSession.swift */; };
+		34F432E12685BE8200724900 /* PersistentDataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432E02685BE8200724900 /* PersistentDataStoreType.swift */; };
+		34F432E32685BE9400724900 /* UserDefaultsPersistentDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F432E22685BE9400724900 /* UserDefaultsPersistentDataStore.swift */; };
 		9BCDD28D2D13968BDBE7AD86 /* Pods_MomentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8D984B0C06360054A3BC16 /* Pods_MomentsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +166,8 @@
 		34BAC6DA267F8DF400F6F144 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		34F432DC268586FD00724900 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
 		34F432DE2685A9E300724900 /* UpdateMomentLikeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMomentLikeSession.swift; sourceTree = "<group>"; };
+		34F432E02685BE8200724900 /* PersistentDataStoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataStoreType.swift; sourceTree = "<group>"; };
+		34F432E22685BE9400724900 /* UserDefaultsPersistentDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPersistentDataStore.swift; sourceTree = "<group>"; };
 		88B35FEF6FB7941871ADD860 /* Pods-MomentsTests.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.internal.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.internal.xcconfig"; sourceTree = "<group>"; };
 		9943647161F3A810749BA25E /* Pods-Moments.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.internal.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.internal.xcconfig"; sourceTree = "<group>"; };
 		9C33A38F977E9C7C895E5EA6 /* Pods-MomentsTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsTests.appstore.xcconfig"; path = "Target Support Files/Pods-MomentsTests/Pods-MomentsTests.appstore.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 			children = (
 				34048F8B26848B8900F6EDA1 /* TogglesDataSource.swift */,
 				34F432DC268586FD00724900 /* UserDataStore.swift */,
+				34F432E02685BE8200724900 /* PersistentDataStoreType.swift */,
+				34F432E22685BE9400724900 /* UserDefaultsPersistentDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -821,6 +827,7 @@
 				34048F852684706600F6EDA1 /* MomentListItemView.swift in Sources */,
 				34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */,
 				34048F7D26842C5E00F6EDA1 /* BaseListItemView.swift in Sources */,
+				34F432E12685BE8200724900 /* PersistentDataStoreType.swift in Sources */,
 				34048F712684216900F6EDA1 /* BaseTableViewCell.swift in Sources */,
 				34BAC6CA267F87FE00F6F144 /* BaseViewController.swift in Sources */,
 				343A46EB2683331F00950DFD /* Configurations.swift in Sources */,
@@ -828,6 +835,7 @@
 				343395672680E52F005C1854 /* DesignKitDemoViewController.swift in Sources */,
 				34BAC6C1267F864D00F6F144 /* Functions.swift in Sources */,
 				343868E526833F6500A51B99 /* GetMomentsByUserIDSession.swift in Sources */,
+				34F432E32685BE9400724900 /* UserDefaultsPersistentDataStore.swift in Sources */,
 				343395652680E049005C1854 /* InternalMenuActionTriggerCell.swift in Sources */,
 				34048F8E26848DA700F6EDA1 /* InternalMenuFeatureToggleCell.swift in Sources */,
 				34048F89268482F100F6EDA1 /* BaseTableViewController.swift in Sources */,
@@ -985,6 +993,7 @@
 				DEVELOPMENT_TEAM = F7C55VYF9A;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Moments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1112,6 +1121,7 @@
 				DEVELOPMENT_TEAM = F7C55VYF9A;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Moments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1238,6 +1248,7 @@
 				DEVELOPMENT_TEAM = F7C55VYF9A;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Moments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
