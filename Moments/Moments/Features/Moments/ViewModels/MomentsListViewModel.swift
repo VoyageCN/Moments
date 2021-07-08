@@ -33,7 +33,6 @@ private extension MomentsListViewModel {
     func setupBindings() {
         momentsRepo.momentsDetails.asObserver()
             .observeOn(MainScheduler.instance)
-            .debug()
             .subscribe(onNext: {
                 transform(momentsDetails: $0)
             }, onError: { _ in
