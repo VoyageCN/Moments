@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>374168413412-nq595n17qseqn25rt87t1ircfm7b3f4s.apps.googleusercontent.com</string>
+	<string>441856607039-klkh2cmtru5648atnr77cp7fgpvmo653.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.374168413412-nq595n17qseqn25rt87t1ircfm7b3f4s</string>
+	<string>com.googleusercontent.apps.441856607039-klkh2cmtru5648atnr77cp7fgpvmo653</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAC-ZpOnV2luh0JdacvODnoh_EarVRAZtU</string>
+	<string>AIzaSyDDcyzMaKMqHZRuQPxh9PonLwRflictgDA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>374168413412</string>
+	<string>441856607039</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ibanimatable.moments.internal</string>
+	<string>com.voyagecn.moments.internal</string>
 	<key>PROJECT_ID</key>
-	<string>moments-app-project</string>
+	<string>moments-f0be8</string>
 	<key>STORAGE_BUCKET</key>
-	<string>moments-app-project.appspot.com</string>
+	<string>moments-f0be8.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:374168413412:ios:912d89b30767d8e5a038f1</string>
-	<key>DATABASE_URL</key>
-	<string>https://moments-app-project.firebaseio.com</string>
+	<string>1:441856607039:ios:51d371270723d6c036098a</string>
 </dict>
 </plist>

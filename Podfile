@@ -3,7 +3,7 @@ source 'https://cdn.cocoapods.org/'
 workspace './Moments.xcworkspace'
 project './Moments/Moments.xcodeproj'
 
-platform :ios, '14.0'
+platform :ios, '14.1'
 use_frameworks!
 
 # ignore all warnings from all dependencies
@@ -21,7 +21,7 @@ def core_pods
 end
 
 def thirdparty_pods
-    pod 'Firebase/Analytics', '7.0.0'
+    pod 'Firebase/Analytics'
 end
 
 def ui_pods
