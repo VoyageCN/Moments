@@ -7,4 +7,7 @@
 
 import Foundation
 
-protocol TrackingEvent { }
+struct TrackingEvent: TrackingEventType {
+    let name: String
+    let parameters: [String: Any]
+}

@@ -65,6 +65,7 @@
 		34BAC6D6267F8B8E00F6F144 /* InternalMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */; };
 		34BAC6D8267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BAC6D7267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift */; };
 		34BAC6DB267F8DF400F6F144 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BAC6DA267F8DF400F6F144 /* AppRouter.swift */; };
+		34C2019C2697FC2D003744B8 /* TrackingEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2019B2697FC2D003744B8 /* TrackingEventType.swift */; };
 		34D3F2452697E8D900D7FDAE /* GoogleService-Info-Internal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D3F2422697E8D900D7FDAE /* GoogleService-Info-Internal.plist */; };
 		34D3F2462697E8D900D7FDAE /* GoogleService-Info-AppStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D3F2432697E8D900D7FDAE /* GoogleService-Info-AppStore.plist */; };
 		34D3F2472697E8D900D7FDAE /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D3F2442697E8D900D7FDAE /* GoogleService-Info-Development.plist */; };
@@ -171,6 +172,7 @@
 		34BAC6D5267F8B8E00F6F144 /* InternalMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuCell.swift; sourceTree = "<group>"; };
 		34BAC6D7267F8D0A00F6F144 /* InternalMenuDescriptionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuDescriptionItemViewModel.swift; sourceTree = "<group>"; };
 		34BAC6DA267F8DF400F6F144 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		34C2019B2697FC2D003744B8 /* TrackingEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingEventType.swift; sourceTree = "<group>"; };
 		34D3F2422697E8D900D7FDAE /* GoogleService-Info-Internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Internal.plist"; sourceTree = "<group>"; };
 		34D3F2432697E8D900D7FDAE /* GoogleService-Info-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist"; sourceTree = "<group>"; };
 		34D3F2442697E8D900D7FDAE /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 				34D3F2482697EAA300D7FDAE /* TrackingRepo.swift */,
 				34D3F24A2697EAAB00D7FDAE /* TrackingProvider.swift */,
 				34D3F24C2697EAB100D7FDAE /* TrackingEvent.swift */,
+				34C2019B2697FC2D003744B8 /* TrackingEventType.swift */,
 				34D3F24E2697EAC100D7FDAE /* ScreenviewsTrackingEventType.swift */,
 				34D3F2502697EACD00D7FDAE /* ScreenviewsTrackingEvent.swift */,
 				34D3F2522697EAD900D7FDAE /* ActionTrackingEvent.swift */,
@@ -920,6 +923,7 @@
 				34048F872684788900F6EDA1 /* MomentListItemViewModel.swift in Sources */,
 				343868DF268338BB00A51B99 /* MomentsDetails.swift in Sources */,
 				34048F832684350F00F6EDA1 /* MomentsListViewController.swift in Sources */,
+				34C2019C2697FC2D003744B8 /* TrackingEventType.swift in Sources */,
 				34048F6926841C7000F6EDA1 /* MomentsListViewModel.swift in Sources */,
 				34D3F24D2697EAB100D7FDAE /* TrackingEvent.swift in Sources */,
 				34048F6526841AB800F6EDA1 /* MomentsRepo.swift in Sources */,

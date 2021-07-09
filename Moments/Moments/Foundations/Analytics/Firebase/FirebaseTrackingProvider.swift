@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 
 struct FirebaseTrackingProvider: TrackingProvider {
-    func trackScreenviews(_ event: TrackingEvent) {
+    func trackScreenviews(_ event: TrackingEventType) {
         guard let event = event as? ScreenviewsTrackingEvent else { return }
 
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
@@ -17,8 +17,14 @@ struct FirebaseTrackingProvider: TrackingProvider {
                             AnalyticsParameterScreenClass: event.screenClass])
     }
 
-    func trackAction(_ event: TrackingEvent) {
-        guard let event = event as? ActionTrackingEvent else { return }
+    func trackEvent(_ event: TrackingEventType) {
+        guard let event = event as? TrackingEvent else { return }
+
+        Analytics.logEvent(event.name, parameters: event.parameters)
+    }
+
+    func trackAction(_ event: TrackingEventType) {
+        guard let event = event as? FirebaseActionTrackingEvent else { return }
 
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: event.parameters)
     }

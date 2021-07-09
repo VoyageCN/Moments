@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ActionTrackingEvent: TrackingEvent {
+protocol ActionTrackingEventType: TrackingEventType {
     var parameters: [String: Any] { get }
 }
