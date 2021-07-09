@@ -626,6 +626,7 @@
 				343A46D8268321DE00950DFD /* Run SwiftGen */,
 				348F10E2267E47D100EA5EAB /* Sources */,
 				3484F892267EF36F0020E856 /* Run SwiftLint */,
+				34C2019E2697FEF4003744B8 /* Copy Firebase Config File */,
 				348F10E3267E47D100EA5EAB /* Frameworks */,
 				348F10E4267E47D100EA5EAB /* Resources */,
 				66851A1C75C6AF93A620BC27 /* [CP] Embed Pods Frameworks */,
@@ -836,6 +837,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		34C2019E2697FEF4003744B8 /* Copy Firebase Config File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Firebase Config File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${PROJECT_DIR}/Moments/Configurations/Firebase/${FIREBASE_CONFIG_FILENAME}.plist\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/GoogleService-Info.plist\"\n";
 		};
 		66851A1C75C6AF93A620BC27 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
