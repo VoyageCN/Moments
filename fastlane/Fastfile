@@ -21,7 +21,7 @@ platform :ios do
 #    # add actions here: https://docs.fastlane.tools/actions
 #  end
 
-desc "Run unit tests"
+  desc "Run unit tests"
   lane :tests do
     run_tests(
       scheme: "Moments", 
@@ -30,20 +30,23 @@ desc "Run unit tests"
       buildlog_path: "./fastlane/dist")
   end
 
-  lane :code_lint do
+  desc "Lint code"
+  lane :lint_code do
     swiftlint(
       mode: :lint,
       executable: "./Pods/SwiftLint/swiftlint",  # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
       raise_if_swiftlint_error: true)
   end
 
-  lane :code_format do
+  desc "Lint and format code"
+  lane :format_code do
     swiftlint(
       mode: :autocorrect,
       executable: "./Pods/SwiftLint/swiftlint",  # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
       raise_if_swiftlint_error: true)
   end
 
+  desc "Sort Xcode project files"
   lane :sort_files do 
     sh "../scripts/sort-Xcode-project-file.pl ../Moments/Moments.xcodeproj"
   end
