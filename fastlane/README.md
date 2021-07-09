@@ -26,7 +26,7 @@ Run unit tests
 fastlane ios lint_code
 ```
 Lint code
-### ios formatcode
+### ios format_code
 ```
 fastlane ios format_code
 ```
@@ -35,13 +35,17 @@ Lint and format code
 ```
 fastlane ios sort_files
 ```
-
-Sort Xcode project code
-### ios archive_appsotres
+Sort Xcode project files
+### ios archive_internal
+```
+fastlane ios archive_internal
+```
+Creates an archive of the Internal app for testing
+### ios archive_appstore
 ```
 fastlane ios archive_appstore
 ```
-Creates an archive of the Production app with Application distribution
+Creates an archive of the Production app with Appstore distribution
 
 ----
 
